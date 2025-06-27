@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/12074/Desktop/lab4_source/Smart_responder.v,1483585322,verilog,,C:/Users/12074/Desktop/lab4_source/count_down.v,,Smart_responder,,,,,,,,
+C:/Users/12074/Desktop/lab4_source/count_down.v,1477304820,verilog,,C:/Users/12074/Desktop/lab4_source/push_detect.v,,count_down,,,,,,,,
+C:/Users/12074/Desktop/lab4_source/push_detect.v,1477304820,verilog,,C:/Users/12074/Desktop/lab4_source/show_who.v,,push_detect,,,,,,,,
+C:/Users/12074/Desktop/lab4_source/show_who.v,1477304820,verilog,,C:/Users/12074/Desktop/lab4_source/sim/Smart_responder_tb.v,,show_who,,,,,,,,
+C:/Users/12074/Desktop/lab4_source/sim/Smart_responder_tb.v,1483585872,verilog,,,,Smart_responder_tb,,,,,,,,
+E:/Experiements/Experiement_4_lab4_Smart_responder/Experiement_4_lab4_Smart_responder.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,

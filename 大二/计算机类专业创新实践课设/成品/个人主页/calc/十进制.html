@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>网页计算器</title>
+  <link rel="stylesheet" type="text/css" href="shijinzhi.css">
+
+</head>
+<body>
+	<div class="ribbon">
+		<a href="./十进制.html"><span>十进制计算器</span></a>
+      <a href="./二进制.html"><span>二进制计算器</span></a>
+  	</div>
+
+  <div class="calculator">
+    <input id="display" class="display" type="text" readonly>
+    
+    <div class="keypad">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('+')">+</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('*')">*</button>      
+      <button style="background-color: #ff69b4;" onclick="appendOperatorToDisplay('!')">!</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button style="background-color: #ff69b4;" onclick="appendOperatorToDisplay('.')">.</button>      
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('/')">/</button>
+      <button style="background-color: #ff69b4;" onclick="appendParenthesis('(')">(</button>
+      <button style="background-color: #ff69b4;" onclick="appendParenthesis(')')">)</button>
+      <button style="background-color: #7b68ee;" onclick="deleteLastChar()">DEL</button>
+      <button style="background-color: #45a049;" onclick="clearDisplay()">C</button>
+      
+    </div>
+
+       <div class="but1">
+      	<button class="button1" onclick="calculate()" >=</button>
+      
+    </div> 
+  </div>
+  
+
+  <script src="shijinzhi.js"></script>
+</body>
+</html>

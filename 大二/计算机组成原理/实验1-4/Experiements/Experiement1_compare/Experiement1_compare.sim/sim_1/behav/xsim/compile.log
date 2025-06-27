@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement1_compare/Experiement1_compare.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement1_compare/Experiement1_compare.srcs/sim_1/new/comp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comp_tb

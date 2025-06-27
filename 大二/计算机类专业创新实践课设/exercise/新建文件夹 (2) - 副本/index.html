@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>计算器_在线计算机使用</title>
+<meta name="Keywords" content="计算机,计算器,计算器在线" />
+<meta name="description" content="计算器是数字运算的计算机，本站提供万能的科学计算器在线使用，可计算根号、方程、函数等高级计算。" />
+<meta name="author" content="计算器" />
+<link rel="stylesheet" type="text/css" href="http://www.0756jia.com/zb_users/theme/superpage/style/style.ok.css" /><link rel="stylesheet" type="text/css" href="http://www.0756jia.com/zb_users/theme/superpage/style/css/style.css?ver=1.1.20317" />
+<link rel="stylesheet" type="text/css" href="http://www.0756jia.com/zb_users/theme/superpage/fonts/iconfont.css" />
+<link rel="apple-touch-icon" type="image/x-icon" href="http://www.0756jia.com/zb_users/upload/2021/03/202103091615273690642996.ico">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.0756jia.com/zb_users/upload/2021/03/202103091615273690642996.ico">
+<link rel="icon" type="image/x-icon" href="http://www.0756jia.com/zb_users/upload/2021/03/202103091615273690642996.ico">
+<script src="http://www.0756jia.com/zb_system/script/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="http://www.0756jia.com/zb_system/script/zblogphp.js"></script>
+<script src="http://www.0756jia.com/zb_system/script/c_html_js_add.php"></script>
+<script src="http://www.0756jia.com/zb_users/theme/superpage/style/js/hnysnet.js"></script>
+<link href="jisuanqi.css" rel="stylesheet" type="text/css">
+<script>var _hmt =_hmt ||[];(function() {var hm =document.createElement("script");hm.src ="https://hm.baidu.com/hm.js?9e9fbb2ed32e01dc5668ef83a85cf976";var s =document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><style>.mw1024,#navul{max-width:1024px}.content p,.content div{margin-bottom:15px;font-size:14px;}</style>
+</head>
+<body>
+<header>
+<div class="mw1024">
+<a href="http://www.0756jia.com/"><div class="logo">
+<div class="sitename type3">计算器</div>
+<p>在线计算机使用</p>
+</div></a>
+<div id="m10">&nbsp;</div>
+<div id="mnav"><i class="iconfont">&#xe8fb;</i></div> </div>
+<div class="clear"></div>
+<div class="navbg">
+<ul id="navul">
+<li class="navbar-item"><a href="http://www.0756jia.com/" title="">首页</a></li><li class="navbar-item"><a href="http://www.0756jia.com/post/5.html" target="_blank" title="数字大写">数字大写</a></li> </ul>
+</div>
+</header>
+<div class="main">
+<div class="mw1024">
+<div class="js-silder">
+<div class="silder-scroll">
+<div class="silder-main">
+<div id="divMain">
+<script src="calc.js"></script>
+<div class="qiehuankuang_1" id="btns">
+<input type="button" value="普通计算器" class="qiehuankuang_1_dq" />
+<input type="button" value="高级计算器" />
+</div>
+<div id="jisuan">
+<div class="calculator_main" id="calculator">
+<div class="calculator_con  current">
+<div id="calculator_base" style="display: block"></div>
+<div class="calculator_hd">
+<input type="text" id="resultIpt" readonly class="resultIpt" value="0" size="17" maxlength="17"></div>
+<div id="baseEprsPanel" valign="middle" width="290" style="display:none"></div>
+<div class="calculator_bd" id="calculator_bd">
+<ul class="calculator_table">
+<li>
+<a class="cal_btn" href="javascript:;" onclick="calculator.memory(this,0);">存储</a>
+<a class="cal_btn" href="javascript:;" onclick="calculator.memory(this,1);">取存</a>
+<a class="cal_btn cla_btn_org" href="javascript:;" id="simpleDel" onclick="calculator.remove();">退格</a>
+<a class="cal_btn cla_btn_org" href="javascript:;" id="simpleClearAllBtn" onclick="calculator.clearAll();">清屏</a></li>
+<li>
+<a class="cal_btn" href="javascript:;" onclick="calculator.memory(this,-1);">累存</a>
+<a class="cal_btn" href="javascript:;" onclick="calculator.memory(this,-2);">积存</a>
+<a class="cal_btn" href="javascript:;" onclick="calculator.memory(this,2);">清存</a>
+<a class="cal_btn cal_btn_gray fontArial" id="simpleDivi" href="javascript:;" onclick="calculator.input(this,3);">÷</a></li>
+<li>
+<a class="cal_btn fontArial" id="simple7" href="javascript:;" onclick="calculator.input(this,-1);">7</a>
+<a class="cal_btn fontArial" id="simple8" href="javascript:;" onclick="calculator.input(this,-1);">8</a>
+<a class="cal_btn fontArial" id="simple9" href="javascript:;" onclick="calculator.input(this,-1);">9</a>
+<a class="cal_btn cal_btn_gray fontArial" id="simpleMulti" href="javascript:;" onclick="calculator.input(this,2);">x</a></li>
+<li>
+<a class="cal_btn fontArial" href="javascript:;" id="simple4" onclick="calculator.input(this,-1);">4</a>
+<a class="cal_btn fontArial" href="javascript:;" id="simple5" onclick="calculator.input(this,-1);">5</a>
+<a class="cal_btn fontArial" href="javascript:;" id="simple6" onclick="calculator.input(this,-1);">6</a>
+<a class="cal_btn cal_btn_gray fontArial" href="javascript:;" id="simpleSubtr" onclick="calculator.input(this,1);">-</a></li>
+<li>
+<a class="cal_btn fontArial" href="javascript:;" id="simple1" onclick="calculator.input(this,-1);">1</a>
+<a class="cal_btn fontArial" href="javascript:;" id="simple2" onclick="calculator.input(this,-1);">2</a>
+<a class="cal_btn fontArial" href="javascript:;" id="simple3" onclick="calculator.input(this,-1);">3</a>
+<a class="cal_btn cal_btn_gray fontArial" href="javascript:;" id="simpleAdd" onclick="calculator.input(this,0);">+</a></li>
+<li>
+<a class="cal_btn fontArial" href="javascript:;" id="simple0" onclick="calculator.input(this,-1);">0</a>
+<a class="cal_btn fontArial" href="javascript:;" id="simpleDot" onclick="calculator.input(this,-1);">.</a>
+<a class="cal_btn fontArial" href="javascript:;" onclick="calculator.input(this,-3);">+/-</a>
+<a class="cal_btn cal_btn_bla fontArial" id="simpleEqual" href="javascript:;" onclick="calculator.input(this,-2);">=</a></li>
+</ul>
+</div>
+</div>
+<div class="calculator_con">
+<div class="calculator_hd">
+<input type="text" class="resultIpt" id="gaoji" name="gaoji" value="0">
+<div id="completeEprsPanel" valign="middle" width="290" style="display:none"></div>
+</div>
+<div class="calculator_bd">
+<ul class="complete_table_rdo">
+<li>
+<div class="labinp">
+<input type="radio" name="carry" onclick="inputChangCarry(16);" id="hex">
+<label for="hex">十六进制</label></div>
+<div class="labinp">
+<input type="radio" name="carry" onclick="inputChangCarry(10);" id="decimal" checked="checked" display="block">
+<label for="decimal">十进制</label></div>
+<div class="labinp">
+<input type="radio" name="carry" onclick="inputChangCarry(8);" id="octal">
+<label for="octal">八进制</label></div>
+<div class="labinp">
+<input type="radio" name="carry" onclick="inputChangCarry(2);" id="binary">
+<label for="binary">二进制</label></div>
+<div class="labinp"></div>
+<div class="labinp">
+<input type="radio" name="angle" onclick="inputChangAngle('d');">
+<label for="angle">角度制</label></div>
+<div class="labinp">
+<input type="radio" name="angle" onclick="inputChangAngle('r');">
+<label for="angle">弧度制</label></div>
+</li>
+<li>
+<div class="labinp">
+<input type="checkbox" id="upperFile" onclick="inputshift();">
+<label for="upperFile">上档功能</label></div>
+<div class="labinp">
+<input type="checkbox" id="hyperbolic" onclick="inputshift();">
+<label for="hyperbolic">双曲函数</label></div>
+<div class="ipts">
+<input type="text" name="bracket" id="bracket" readonly size="3" class="chk_text_inp">
+<input type="text" name="memory" id="memory" readonly size="3" class="chk_text_inp">
+<input type="text" name="operator" id="operator" readonly size="3" class="chk_text_inp"></div>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="completeDel" onclick="backspace();">退格</a>
+<a class="cal_btn cla_btn_org" href="javascript:;" onclick="document.getElementById('gaoji').value=0;document.getElementById('completeEprsPanel').innerHTML = '';this.blur();">清屏</a></li>
+</ul>
+<ul class="complete_table_main">
+<li>
+<a class="cal_btn" href="javascript:;" onclick="putmemory();">存储</a>
+<a class="cal_btn" href="javascript:;" onclick="getmemory();">取存</a>
+<a class="cal_btn" href="javascript:;" onclick="addmemory();">累存</a>
+<a class="cal_btn" href="javascript:;" onclick="multimemory();">积存</a>
+<a class="cal_btn" href="javascript:;" onclick="clearmemory();">清存</a>
+<a class="cal_btn cla_btn_org" href="javascript:;" onclick="clearall();">全清</a></li>
+<li>
+<a class="cal_btn fontArial" id="complete7" href="javascript:;" onclick="inputkey('7');">7</a>
+<a class="cal_btn fontArial" id="complete8" href="javascript:;" onclick="inputkey('8');">8</a>
+<a class="cal_btn fontArial" id="complete9" href="javascript:;" onclick="inputkey('9');">9</a>
+<a class="cal_btn cal_btn_gray fontArial" id="completeDivi" href="javascript:;" onclick="operation('/',6);;">÷</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="operation('%',6);">取余</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="operation('&',3);">与</a></li>
+<li>
+<a class="cal_btn fontArial" id="complete4" href="javascript:;" onclick="inputkey('4');">4</a>
+<a class="cal_btn fontArial" id="complete5" href="javascript:;" onclick="inputkey('5');">5</a>
+<a class="cal_btn fontArial" id="complete6" href="javascript:;" onclick="inputkey('6');">6</a>
+<a class="cal_btn cal_btn_gray fontArial" id="completeMulti" href="javascript:;" onclick="operation('*',6);">x</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="changeDecimal" onclick="inputfunction('floor','deci');">取整</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="operation('|',1);">或</a></li>
+<li>
+<a class="cal_btn fontArial" id="complete1" href="javascript:;" onclick="inputkey('1');">1</a>
+<a class="cal_btn fontArial" id="complete2" href="javascript:;" onclick="inputkey('2');">2</a>
+<a class="cal_btn fontArial" id="complete3" href="javascript:;" onclick="inputkey('3');">3</a>
+<a class="cal_btn cal_btn_gray fontArial" id="completeSubtr" href="javascript:;" onclick="operation('-',5);">-</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="operation('<',4);">左移</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="inputfunction('~','~');">非</a></li>
+<li>
+<a class="cal_btn fontArial" id="complete0" href="javascript:;" onclick="inputkey('0');">0</a>
+<a class="cal_btn fontArial" href="javascript:;" onclick="changeSign();">+/-</a>
+<a class="cal_btn fontArial" id="completeDot" href="javascript:;" id="dian" onclick="inputkey('.');">.</a>
+<a class="cal_btn cal_btn_gray fontArial" id="completeAdd" href="javascript:;" onclick="operation('+',5);">+</a>
+<a class="cal_btn cal_btn_bla fontArial" id="completeEqual" href="javascript:;" onclick="result();">=</a>
+<a class="cal_btn cal_btn_gre " href="javascript:;" onclick="operation('x',2);">异或</a></li>
+<li>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="ka" onclick="inputkey('a');">A</a>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="kb" onclick="inputkey('b');">B</a>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="kc" onclick="inputkey('c');">C</a>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="kd" onclick="inputkey('d');">D</a>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="ke" onclick="inputkey('e');">E</a>
+<a class="cal_btn cal_btn_gre fontArial" href="javascript:;" id="kf" onclick="inputkey('f');">F</a></li>
+</ul>
+<ul class="complete_more">
+<li>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="pi" onclick="inputfunction('pi','pi');">PI</a>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="e" onclick="inputfunction('e','e');">E</a>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="bt" onclick="inputfunction('dms','deg');">d.ms</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="addbracket(this);">(</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="disbracket(this);">)</a></li>
+<li>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="ln" onclick="inputfunction('ln','exp');">In</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="log" onclick="inputfunction('log','expdec');">log</a>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="sin" onclick="inputtrig('sin','arcsin','hypsin','ahypsin');">sin</a>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="cos" onclick="inputtrig('cos','arccos','hypcos','ahypcos');">cos</a>
+<a class="cal_btn cal_btn_dis" href="javascript:;" id="tan" onclick="inputtrig('tan','arctan','hyptan','ahyptan');">tan</a></li>
+<li>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="inputfunction('!','!');">n!</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="inputfunction('recip','recip');">1/x</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="sqr" onclick="inputfunction('sqr','sqrt');">x^2</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" id="cube" onclick="inputfunction('cube','cubt');">x^3</a>
+<a class="cal_btn cal_btn_gre" href="javascript:;" onclick="operation('^',7);">x^y</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>jisuanqi_run();var oBtns=document.getElementById('btns');var aLi=oBtns.getElementsByTagName('input');var aLiLength=aLi.length;var oCal=document.getElementById('calculator');var aDiv=oCal.getElementsByClassName('calculator_con');for (var i=0;i<aLiLength;i++){(function(idx){aLi[idx].onclick =function(){document.getElementById('resultIpt').value=0;document.getElementById('gaoji').value =0;for(var j =0;j<aLiLength;j++){aLi[j].className='btnss';aDiv[j].className='calculator_con';}
+ this.className='qiehuankuang_1_dq';aDiv[idx].className='calculator_con current';}
+})(i);}
+</script> </div>
+</div>
+</div>
+<div class="spm" id=""><h3>在线科学计算器使用说明</h3>
+<div class="content">
+<div class="content3"><p><span style="color: blue; font-size: 15px; line-height: 1.5;"></span><span style="color: #FF0000;">根号：先按数字，然后点击“x^y”键，再输入0.5，最后按“=”键</span></p><p><span style="color: #FF0000;">³√￣：按数字，然后按&quot;x＾y&quot;，接着按&quot;3&quot;，再按&quot;1/x&quot;，最后按“=”键</span><br/><span style="color: blue; font-size: 15px; line-height: 1.5;"></span></p><p>储存：将当前值存到暂存器</p><p>取存：将暂存器的值取出</p><p>累存：将当前值与存储器的暂存值相加，再存入暂存器</p><p>积存：将当前值与存储器的暂存值相乘，再存入暂存器</p><p>清存：将存储器暂存值清零</p></div>
+</div>
+</div>
+<div class="spm" id=""><h3>数字大写对照表 大写数字一到十</h3>
+<div class="content">
+<div class="content5"><table width="100%" cellspacing="1" cellpadding="8"><caption><span style="color: #FF0000;"><strong>数字大写对照表</strong></span><br/></caption><tbody><tr class="firstRow"><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">1</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">2</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">3</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">4</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">5</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">6</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">7</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">8</td></tr><tr><td bgcolor="#FFF" align="center">壹</td><td bgcolor="#FFF" align="center">贰</td><td bgcolor="#FFF" align="center">叁</td><td bgcolor="#FFF" align="center">肆</td><td bgcolor="#FFF" align="center">伍</td><td bgcolor="#FFF" align="center">陆</td><td bgcolor="#FFF" align="center">柒</td><td bgcolor="#FFF" align="center">捌</td></tr><tr><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">9</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">0</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">十</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">百</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">千</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">万</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">亿</td><td style="background-color: rgb(0, 176, 240);" bgcolor="#F5F5F5" align="center">兆</td></tr><tr><td bgcolor="#FFF" align="center">玖</td><td bgcolor="#FFF" align="center">零</td><td bgcolor="#FFF" align="center">拾</td><td bgcolor="#FFF" align="center">佰</td><td bgcolor="#FFF" align="center">仟</td><td bgcolor="#FFF" align="center">万</td><td bgcolor="#FFF" align="center">亿</td><td bgcolor="#FFF" align="center">兆</td></tr></tbody></table><p><strong>使用说明：</strong><br/>中文大写金额数字前应标明“人民币”字样，大写金额数字应紧接“人民币”字样填写，不得留有空白。<br/>阿拉伯数字小写金额数字中有“0”时，中文大写应按照汉语语言规律、金额数字构成和防止涂改的要求进行书写。<br/>例如：￥206000.75应写成 人民币贰拾万陆仟元零柒角伍分，或写成 人民币贰拾万零陆仟元柒角伍分。</p><table><caption><span style="color: #FF0000;"><strong>金额单位(位数)对应表</strong></span><br/></caption><tbody><tr class="firstRow"><td style="word-break: break-all;" width="263" valign="top">亿 = 亿<br/></td><td style="word-break: break-all;" width="263" valign="top">万 = 万<br/></td><td style="word-break: break-all;" width="263" valign="top">千 = 仟</td><td style="word-break: break-all;" width="263" valign="top">百 = 佰</td><td style="word-break: break-all;" width="263" valign="top">十 = 拾</td></tr><tr><td style="word-break: break-all;" width="263" valign="top">元 = 元(圆)</td><td style="word-break: break-all;" width="263" valign="top">角 = 角<br/></td><td style="word-break: break-all;" width="263" valign="top">分 = 分</td><td style="word-break: break-all;" width="263" valign="top">正 = 正</td><td style="word-break: break-all;" width="263" valign="top">整 = 整</td></tr></tbody></table><p><strong>使用说明：</strong><br/>中文大写金额数字到“元”为止的，在“元”之后、应写“整”(或“正”)字；在“角”之后，可以不写“整”(或“正”)字；大写金额数字有“分”的，“分”后面不写“整”(或“正”)字。</p></div>
+</div>
+</div>
+<div class="spm" id=""><h3>计算器介绍</h3>
+<div class="content">
+<div class="content4"><p>计算器（calculator ；counter）一般是指“电子计算器”，计算器是现代人发明的可以进行数字运算的计算机。</p></div>
+</div>
+</div>
+<div class="spm" id=""><h3>在线计算器介绍</h3>
+<div class="content">
+<div class="content1"><p style="text-align: center;"><img class="ue-image" src="http://www.0756jia.com/zb_users/upload/2021/03/202103091615272883839812.jpg" title="2019100767693577.jpg" alt="2019100767693577.jpg"/></p><p>计算器（calculator
+；counter）一般是指“电子计算器”，该名词由日文传入中国。计算器能进行数学运算的手持机器，拥有集成电路芯片，但结构简单，比现代电脑结构简单得多，可以说是第一代的电子计算机（电脑），且功能也较弱，但较为方便与廉价，可广泛运用于商业交易中，是必备的办公用品之一。</p><p>在线计算器是一个虚拟的网页计算器，基础版的网页计算器，为用户提供加、减、乘、除等基本的数学计算，还可以暂存计算结果，在需在线计算器要时通过“取存”键调出来再与其他计算结果进行运算。除了基础版外，还提供高级版的计算器，加入了圆周率、正弦、余弦、正切、对数等计算功能，力求满足广大网友的需要。</p></div>
+</div>
+</div>
+<div class="spm">
+<h3>友情链接</h3>
+<ul class="flink">
+<li class="link-item"><a href="http://www.0756jia.com/" target="_blank" title="科学计算器">科学计算器</a></li><li class="link-item"><a href="http://www.touxiangwu.com/" target="_blank" title="头像屋">头像屋</a></li><li class="link-item"><a href="http://touxiangkong.com/" target="_blank" title="QQ头像">QQ头像</a></li> </ul>
+</div>
+</div></div>
+<footer>
+<div class="mw1024">
+<p>本站提供的<a href="http://www.0756jia.com/" target="_blank">计算器</a>电脑端跟手机端都可以在线方便使用下载收藏！<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">粤ICP备12091763号</a></p>
+</div>
+</footer></body>
+</html> 

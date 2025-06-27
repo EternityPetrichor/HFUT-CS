@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Experiement3_ahea_ddder.srcs/sources_1/new/ahead_adder.v" \
+"../../../../Experiement3_ahea_ddder.srcs/sim_1/new/ahead_adder_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

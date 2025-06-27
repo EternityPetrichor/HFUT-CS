@@ -1,0 +1,50 @@
+system-view
+display vlan
+vlan batch 10 20 40 50
+interface gigabitEthernet0/0/1
+port hybrid tagged vlan 10 20 40 50
+interface gigabitEthernet0/0/2
+port hybrid tagged vlan 10 20 40 50
+interface gigabitEthernet0/0/3
+port hybrid untagged vlan 10 20 30 40 50
+interface gigabitEthernet0/0/4
+port hybrid pvid vlan 40
+port hybrid untagged vlan 10 30 40
+interface gigabitEthernet0/0/5
+port hybrid pvid vlan 50
+port hybrid untagged vlan 20 30 50
+
+quit
+save
+
+
+system-view
+display vlan
+vlan batch 10 20 30 40 50
+interface Ethernet0/0/1
+port hybrid pvid vlan 10
+port hybrid untagged vlan 10 30 40 50
+interface Ethernet0/0/2
+port hybrid pvid vlan 20
+port hybrid untagged vlan 20 30 40 50
+interface gigabitEthernet0/0/1
+port hybrid tagged vlan 10 20 30 40 50
+
+quit
+save
+
+
+system-view
+display vlan
+vlan batch 10 20 30 40 50
+interface Ethernet0/0/1
+port hybrid pvid vlan 10
+port hybrid untagged vlan 10 30 40 50
+interface Ethernet0/0/2
+port hybrid pvid vlan 20
+port hybrid untagged vlan 20 30 40 50
+interface gigabitEthernet0/0/1
+port hybrid tagged vlan 10 20 30 40 50
+
+quit
+save

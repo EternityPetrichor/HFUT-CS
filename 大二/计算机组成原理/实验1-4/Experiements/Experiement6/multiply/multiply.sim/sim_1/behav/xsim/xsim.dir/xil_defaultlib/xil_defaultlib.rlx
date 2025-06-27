@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/Bit4_to_8421.v,1713585470,verilog,,E:/Experiements/Experiement6/multiply/src/Bit8_to_8421.v,,Bit4_to_8421,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/Bit8_to_8421.v,1713585516,verilog,,E:/Experiements/Experiement6/multiply/src/MULTU_4bit.v,,Bit8_to_8421,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/MULTU_4bit.v,1713502264,verilog,,E:/Experiements/Experiement6/multiply/src/ShowEightSeg7.v,,MULTU_4bit,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/ShowEightSeg7.v,1713587548,verilog,,E:/Experiements/Experiement6/multiply/src/top.v,,ShowEightSeg7,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/tb_top.v,1713587627,verilog,,,,tb_top,,,,,,,,
+E:/Experiements/Experiement6/multiply/src/top.v,1713584919,verilog,,E:/Experiements/Experiement6/multiply/src/tb_top.v,,top,,,,,,,,

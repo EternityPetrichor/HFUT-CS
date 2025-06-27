@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/12074/Desktop/lab4_source/Smart_responder.v" \
+"C:/Users/12074/Desktop/lab4_source/count_down.v" \
+"C:/Users/12074/Desktop/lab4_source/push_detect.v" \
+"C:/Users/12074/Desktop/lab4_source/show_who.v" \
+"C:/Users/12074/Desktop/lab4_source/sim/Smart_responder_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

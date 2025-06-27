@@ -1,0 +1,29 @@
+.calendar {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+}

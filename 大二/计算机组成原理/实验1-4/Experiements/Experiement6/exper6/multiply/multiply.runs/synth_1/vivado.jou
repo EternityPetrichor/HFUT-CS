@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Apr 19 20:52:19 2024
+# Process ID: 70124
+# Current directory: D:/OneDrive/Temp/Course/exper6/multiply/multiply.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/OneDrive/Temp/Course/exper6/multiply/multiply.runs/synth_1/top.vds
+# Journal file: D:/OneDrive/Temp/Course/exper6/multiply/multiply.runs/synth_1\vivado.jou
+# Running On: DESKTOP-MODEST, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16312 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

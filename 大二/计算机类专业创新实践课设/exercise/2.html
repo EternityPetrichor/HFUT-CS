@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>网页日历</title>
+    <link rel="stylesheet" type="text/css" href="2.css">
+</head>
+<body>
+    <h1>网页日历</h1>
+    <div class="calendar">
+        <div class="header">
+            <button onclick="previousMonth()">&lt;</button>
+            <h2 id="month-year"></h2>
+            <button onclick="nextMonth()">&gt;</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>周日</th>
+                    <th>周一</th>
+                    <th>周二</th>
+                    <th>周三</th>
+                    <th>周四</th>
+                    <th>周五</th>
+                    <th>周六</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+    <script src="2.js"></script>
+</body>
+</html>

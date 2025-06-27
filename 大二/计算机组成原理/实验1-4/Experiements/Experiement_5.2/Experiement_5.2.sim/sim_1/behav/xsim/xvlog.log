@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.2/Experiement_5.2.srcs/sources_1/new/adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.2/Experiement_5.2.srcs/sources_1/new/addsub_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.2/Experiement_5.2.srcs/sources_1/new/addsub_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.2/Experiement_5.2.srcs/sim_1/new/addsub_4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_4bit_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.2/Experiement_5.2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

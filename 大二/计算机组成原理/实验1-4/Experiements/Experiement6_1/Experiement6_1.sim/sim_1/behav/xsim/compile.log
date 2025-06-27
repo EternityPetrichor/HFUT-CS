@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6_1/Experiement6_1.srcs/sources_1/new/MULTU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6_1/Experiement6_1.srcs/sim_1/new/MULTUtb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTUtb

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+E:/Experiements/Experiement_5.3/Experiement_5.3.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sim_1/new/addsub_4bitmux_tb.v,1712648864,verilog,,,,addsub_4bitmux_tb,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/adder_1bit.v,1712645452,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_1bit.v,,adder_1bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_1bit.v,1712645495,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bit.v,,addsub_1bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bit.v,1712645553,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bitmux.v,,addsub_4bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bitmux.v,1712665384,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/and_4bit.v,,addsub_4bitmux,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/and_4bit.v,1712644733,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_1bit.v,,and_4bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_1bit.v,1712645219,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_4bit.v,,mux41_1bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_4bit.v,1712645340,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/or_4bit.v,,mux41_4bit,,,,,,,,
+E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/or_4bit.v,1712644792,verilog,,E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sim_1/new/addsub_4bitmux_tb.v,,or_4bit,,,,,,,,

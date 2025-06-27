@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 30 23:00:42 2023
+# Process ID: 13484
+# Current directory: D:/Desktop/CPUtest/MIPS32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15088 D:\Desktop\CPUtest\MIPS32\MIPS32.xpr
+# Log file: D:/Desktop/CPUtest/MIPS32/vivado.log
+# Journal file: D:/Desktop/CPUtest/MIPS32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/CPUtest/MIPS32/MIPS32.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source x7seg_top_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/inst}} 
+current_wave_config {Untitled 1}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/regfile1/regs[2]}} 
+current_wave_config {Untitled 1}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/regfile1/regs[3]}} 
+current_wave_config {Untitled 1}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/hilo_reg0/hi_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/hilo_reg0/lo_o}} 
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source x7seg_top_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/inst}} 
+current_wave_config {Untitled 2}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/regfile1/regs[2]}} 
+current_wave_config {Untitled 2}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/regfile1/regs[3]}} 
+current_wave_config {Untitled 2}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/hilo_reg0/hi_o}} 
+current_wave_config {Untitled 2}
+add_wave {{/x7seg_top_tb/x7seg_top0/openmips_min_sopc/openmips0/hilo_reg0/lo_o}} 
+restart
+run all
+restart
+run all
+save_wave_config {D:/Desktop/CPUtest/MIPS32/x7seg_top_tb_³ý·¨.wcfg}
+add_files -fileset sim_1 -norecurse D:/Desktop/CPUtest/MIPS32/x7seg_top_tb_³ý·¨.wcfg
+set_property xsim.view D:/Desktop/CPUtest/MIPS32/x7seg_top_tb_³ý·¨.wcfg [get_filesets sim_1]
+close_sim

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12074/Desktop/lab4_source/Smart_responder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Smart_responder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12074/Desktop/lab4_source/count_down.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_down
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12074/Desktop/lab4_source/push_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module push_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12074/Desktop/lab4_source/show_who.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_who
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12074/Desktop/lab4_source/sim/Smart_responder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Smart_responder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_4_lab4_Smart_responder/Experiement_4_lab4_Smart_responder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

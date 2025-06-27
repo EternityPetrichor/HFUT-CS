@@ -1,0 +1,460 @@
+/*--------------------- Copyright (c) 2021 ----------------------- 
+[Master Stylesheet] 
+Project: Dash Store
+Version: 1.0.0 
+Author: 
+-------------------------------------------------------------------*/
+
+
+/*--- Common CSS ----*/
+
+:root {
+    --main-black: #000000;
+    --main-black2: #222222;
+    --main-black3: #2a3042;
+    --main-black4: #2f3c4e;
+    --main-white: #ffffff;
+    --main-off-white: #f4f7fc;
+    --main-white2: #f8f8fb;
+    --main-white3: #fdfeff;
+    --main-txt-color: #666666;
+    --main-title-color: #333333;
+    --main-border-color: #e4e4e4;
+    --error: #ff592c;
+    --success: #44de4f;
+    --main-color: #11a1fd;
+    --color1: #efb5a3;
+    --color2: #315f72;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    color: var(--main-txt-color);
+    background: var(--main-white);
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:hover {
+    color: var(--main-black2);
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button,
+button:focus,
+button:hover,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    line-height: 1.2;
+    color: var(--main-black2);
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #cfecff;
+}
+::-webkit-scrollbar-thumb {
+    background: #11a1fd;
+}
+.ad-btn {
+    min-width: 170px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 52px;
+    display: inline-block;
+    text-align: center;
+    color: var(--main-white);
+    background: var(--main-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+}
+
+.ad-btn:hover,
+.ad-btn:focus {
+    color: var(--main-white);
+    background: var(--main-color);
+}
+
+.ad-color {
+    color: var(--main-color);
+}
+
+.mb-30 {
+    margin-bottom: 20px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+
+/*--- auth CSS ----*/
+
+.ad-auth-wrapper {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 15px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-auth-wrapper:before {
+    background-image: url(../image/auth-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.ad-auth-box {
+    max-width: 980px;
+    width: 100%;
+    display: inline-flex;
+    text-align: left;
+    background: var(--main-white);
+    vertical-align: middle;
+    justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
+}
+
+.ad-auth-content {
+    padding: 50px 50px 42px 20px;
+    max-width: 100%;
+}
+
+.ad-auth-img {
+    padding: 0 35px;
+}
+
+.ad-auth-logo {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.ad-auth-content img {
+    max-width: 200px;
+}
+.ad-auth-content h2 {
+    font-size: 36px;
+    color: var(--main-title-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.ad-auth-form {
+    margin-top: 32px;
+}
+
+.ad-auth-feilds input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--main-border-color);
+    color: var(--main-title-color);
+    border-radius: 5px;
+    padding: 0 20px 0 50px;
+    margin-bottom: 0;
+}
+
+.ad-auth-feilds input::-webkit-input-placeholder {
+    color: var(--main-txt-color);
+    opacity: .6;
+}
+
+.ad-auth-feilds input:-ms-input-placeholder {
+    color: var(--main-txt-color);
+    opacity: .6;
+}
+
+.ad-auth-feilds input::placeholder {
+    color: var(--main-txt-color);
+    opacity: .6;
+}
+
+.ad-auth-feilds input:focus {
+    border-color: var(--main-color);
+}
+
+.ad-auth-feilds input:focus~.ad-auth-icon svg path {
+    fill: var(--main-color);
+}
+
+.ad-auth-feilds input,
+.ad-auth-feilds input:focus,
+.ad-auth-feilds input:focus~.ad-auth-icon svg path,
+.ad-auth-feilds input~.ad-auth-icon svg path {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ad-auth-feilds {
+    position: relative;
+}
+
+.ad-auth-feilds .ad-auth-icon {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-auth-icon svg {
+    height: 20px;
+    width: 20px;
+}
+
+.ad-checkbox input {
+    display: none
+}
+
+.ad-checkbox span {
+    margin: 0;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+.ad-checkbox span:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 2px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+}
+
+.ad-checkbox span:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid var(--main-off-white);
+    border-bottom: 3px solid var(--main-off-white);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.ad-checkbox input:checked~span:after {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.ad-checkbox input:checked~span:before {
+    background-color: var(--main-color);
+    border: 1px solid transparent
+}
+
+.ad-checkbox input:checked~span {
+    color: var(--main-color);
+}
+
+.ad-forgot-link {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .4px
+}
+
+.ad-other-feilds {
+    margin: 37px 0 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-auth-btn {
+    margin-bottom: 16px;
+    margin-top: 17px;
+}
+
+.ad-register-text a {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.ad-notifications.ad-error {
+    border-top: 5px solid var(--error);
+}
+
+.ad-notifications {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: var(--main-white);
+    padding: 15px 20px 15px 90px;
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ad-notifications p {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    font-weight: 700;
+}
+
+.ad-notifications p span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.ad-notifications.ad-error p span {
+    color: var(--error);
+}
+
+.ad-notifications.ad-success {
+    border-top: 5px solid var(--success);
+}
+
+.ad-notifications.ad-success p span {
+    color: var(--success);
+}
+
+.ad-notifications:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60px;
+    height: 52px;
+    left: 20px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.ad-notifications.ad-success:before {
+    background-image: url(https://www.17sucai.com/preview/1097306/2021-07-18/splashdash/assets/images/happy-striker.png);
+    height: 45px;
+}
+
+.ad-notifications.ad-error:before {
+    background-image: url(../image/sad.png);
+}
+
+
+/*---- responsive css ------*/
+
+@media(max-width:1200px) {
+    .ad-auth-wrapper {
+        padding: 60px 30px;
+    }
+}
+
+@media(max-width:991px) {
+    .ad-auth-box {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    .ad-auth-img {
+        padding: 30px;
+    }
+    .ad-auth-content {
+        padding: 0px 30px 22px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:576px) {
+    .ad-auth-content h2 {
+        font-size: 26px;
+    }
+    .ad-auth-content {
+        padding: 0px 15px 22px;
+    }
+    .ad-auth-wrapper {
+        padding: 30vh 15px;
+    }
+}

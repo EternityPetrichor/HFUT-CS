@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPS32.srcs/sources_1/new/ctrl.v" \
+"../../../../MIPS32.srcs/sources_1/new/div.v" \
+"../../../../MIPS32.srcs/sources_1/new/ex.v" \
+"../../../../MIPS32.srcs/sources_1/new/ex_mem.v" \
+"../../../../MIPS32.srcs/sources_1/new/fenping.v" \
+"../../../../MIPS32.srcs/sources_1/new/hilo_reg.v" \
+"../../../../MIPS32.srcs/sources_1/new/id.v" \
+"../../../../MIPS32.srcs/sources_1/new/id_ex.v" \
+"../../../../MIPS32.srcs/sources_1/new/if_id.v" \
+"../../../../MIPS32.srcs/sources_1/new/inst_rom.v" \
+"../../../../MIPS32.srcs/sources_1/new/mem.v" \
+"../../../../MIPS32.srcs/sources_1/new/mem_wb.v" \
+"../../../../MIPS32.srcs/sources_1/new/openmips.v" \
+"../../../../MIPS32.srcs/sources_1/new/openmips_min_sopc.v" \
+"../../../../MIPS32.srcs/sources_1/new/pc_reg.v" \
+"../../../../MIPS32.srcs/sources_1/new/regfile.v" \
+"../../../../MIPS32.srcs/sources_1/new/x7seg.v" \
+"../../../../MIPS32.srcs/sources_1/new/x7seg_top.v" \
+"../../../../MIPS32.srcs/sim_1/new/x7seg_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

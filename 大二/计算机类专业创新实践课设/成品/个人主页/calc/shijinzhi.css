@@ -1,0 +1,125 @@
+    /** {
+        margin: 0;
+        padding: 0
+    }*/
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('./beijing/1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .calculator {
+      margin: 20px auto;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .display {
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: right;
+      margin-bottom: 10px;
+      resize: none;
+      width: 278.4px;
+    }
+
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+      /*text-align: center;*/
+    }
+
+    .keypad button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #eaeaea/*#4caf50*/;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+    }
+    
+
+    .keypad button:hover {
+      background-color: #45a049;
+      cursor: pointer;
+    }
+
+    .keypad button:active {
+      background-color: #3e8942;
+    }
+    .but1{
+    	text-align: center;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-left: 75px;
+        padding-right: 75px;
+        display: inline-block;
+    }
+    .button1{
+    	width: 150px;
+    	height: 38.4px;
+    	font-size: 16px;
+    	background-color: #45a049;
+    	border: none;
+      	border-radius: 5px;
+    }
+    .button1:hover{
+    	cursor: pointer;
+    }
+
+	.ribbon {
+    display: flex;
+    justify-content: center;
+    /*position: absolute;*/
+    right: 300px;
+    top: 50px;
+    margin: auto;
+	}
+
+    .ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+	}
+
+	.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+	}
+
+	.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+	}
+
+	.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+	}

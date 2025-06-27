@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.manager.dao.CountMapper">
+  <resultMap id="UserResultMap" type="com.base.manager.pojo.UserCount">
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="reg_time" jdbcType="VARCHAR" property="regTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    num,reg_time
+  </sql>
+  <select id="getAllUser" resultMap="UserResultMap">
+    SELECT count(*) as num
+    FROM base_admin_user
+    <where>
+      <if test="startTime != null and startTime != '' ">
+        and reg_time &gt;  #{startTime}
+      </if>
+      <if test="endTime != null and endTime != '' ">
+        and reg_time &lt;  #{endTime}
+      </if>
+    </where>
+  </select>
+  <resultMap id="ProductResultMap" type="com.base.manager.pojo.UserCount">
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+  </resultMap>
+  <select id="getProduct" resultMap="ProductResultMap">
+    SELECT count(*) as num
+    FROM product
+    <where>
+      <if test="startTime != null and startTime != '' ">
+        and create_time &gt;  #{startTime}
+      </if>
+      <if test="endTime != null and endTime != '' ">
+        and create_time &lt;  #{endTime}
+      </if>
+    </where>
+  </select>
+
+  <resultMap id="OrderResultMap" type="com.base.manager.pojo.UserCount">
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="order_time" jdbcType="VARCHAR" property="order_time" />
+  </resultMap>
+  <select id="getOrder" resultMap="OrderResultMap">
+    SELECT count(*) as num
+    FROM orders
+    <where>
+      <if test="startTime != null and startTime != '' ">
+        and order_time &gt;  #{startTime}
+      </if>
+      <if test="endTime != null and endTime != '' ">
+        and order_time &lt;  #{endTime}
+      </if>
+    </where>
+  </select>
+
+  <resultMap id="MoneyResultMap" type="com.base.manager.pojo.UserCount">
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="create_time" jdbcType="VARCHAR" property="create_time" />
+  </resultMap>
+  <select id="getMoney" resultMap="MoneyResultMap">
+    SELECT COALESCE(SUM(allprice),0) as num
+    FROM orders
+    <where>
+      <if test="startTime != null and startTime != '' ">
+        and create_time &gt;  #{startTime}
+      </if>
+      <if test="endTime != null and endTime != '' ">
+        and create_time &lt;  #{endTime}
+      </if>
+        and status=1
+    </where>
+  </select>
+
+  <resultMap id="saleResultMap" type="com.base.manager.pojo.Count">
+    <result column="allprice" jdbcType="INTEGER" property="allprice" />
+    <result column="orders" jdbcType="INTEGER" property="orders" />
+    <result column="pname" jdbcType="VARCHAR" property="pname" />
+  </resultMap>
+  <select id="getSaleOrder" resultMap="saleResultMap">
+    SELECT COALESCE(SUM(allprice),0)  as allprice, sum(num) as orders,pname as pname
+     from orders
+     where status=1
+     GROUP BY pname
+  </select>
+
+  <resultMap id="bingResultMap" type="com.base.manager.pojo.Bing">
+    <result column="value" jdbcType="INTEGER" property="value" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <select id="getSaleBing" resultMap="bingResultMap">
+    SELECT count(*) as value,pname as name
+     from orders
+     where status=1
+     GROUP BY pname
+  </select>
+
+  <resultMap id="pfsResultMap" type="com.base.manager.pojo.Bing">
+    <result column="value" jdbcType="INTEGER" property="value" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <select id="getPfsBing" resultMap="pfsResultMap">
+    SELECT count(*) as value,(SELECT sys_user_name FROM base_admin_user as b WHERE b.id = o.uid) as name
+     from orders o
+     where status=1
+     GROUP BY name
+  </select>
+
+  <resultMap id="LineResultMap" type="com.base.manager.pojo.SaleLine">
+    <result column="allprice" jdbcType="INTEGER" property="allprice" />
+    <result column="ordertime" jdbcType="VARCHAR" property="ordertime" />
+  </resultMap>
+  <select id="getSaleLine" resultMap="LineResultMap">
+    select sum(allprice) as allprice,DATE_FORMAT(order_time, '%Y-%m-%d') as ordertime
+        from orders
+        where status=1 GROUP BY ordertime ORDER BY ordertime
+  </select>
+</mapper>

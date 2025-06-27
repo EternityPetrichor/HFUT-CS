@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/Bit4_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit4_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/Bit8_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit8_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/MULTU_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/ShowEightSeg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowEightSeg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

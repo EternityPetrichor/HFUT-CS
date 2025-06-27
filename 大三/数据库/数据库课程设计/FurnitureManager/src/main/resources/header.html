@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <header class="header-wrapper main-header" th:fragment="title">
+    <div class="header-inner-wrapper">
+        <div class="logo-wrapper">
+            <a href="" class="admin-logo">
+                <img src="static/picture/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-right">
+
+            <div class="header-left">
+                <div class="header-links">
+                    <a href="javascript:void(0);" class="toggle-btn">
+                        <span></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-controls">
+
+                <div class="user-info-wrapper header-links">
+                    <a href="javascript:void(0);" class="user-info">
+                        <img src="static/picture/user.jpg" alt="" class="user-img">
+                        <div class="blink-animation">
+                            <span class="blink-circle"></span>
+                            <span class="main-circle"></span>
+                        </div>
+                    </a>
+                    <div class="user-info-box">
+                        <div class="drop-down-header">
+                            <h4 th:text="${nickname}"></h4>
+                            <p>欢迎进入到图书管理系统</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="logout">
+                                    <i class="fas fa-sign-out-alt"></i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>

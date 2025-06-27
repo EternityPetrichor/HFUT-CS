@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jan 11 18:01:35 2024
+# Process ID: 10564
+# Current directory: D:/作业/计算机体系结构/CPUtest/MIPS32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2268 D:\作业\计算机体系结构\CPUtest\MIPS32\MIPS32.xpr
+# Log file: D:/作业/计算机体系结构/CPUtest/MIPS32/vivado.log
+# Journal file: D:/作业/计算机体系结构/CPUtest/MIPS32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top.tcl
+close_sim

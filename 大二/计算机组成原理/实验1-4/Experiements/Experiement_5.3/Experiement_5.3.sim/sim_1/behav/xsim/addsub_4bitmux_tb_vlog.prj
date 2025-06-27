@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Experiement_5.3.srcs/sources_1/new/adder_1bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/addsub_1bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/addsub_4bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/addsub_4bitmux.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/and_4bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/mux41_1bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/mux41_4bit.v" \
+"../../../../Experiement_5.3.srcs/sources_1/new/or_4bit.v" \
+"../../../../Experiement_5.3.srcs/sim_1/new/addsub_4bitmux_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr 22 14:41:31 2024
+# Process ID: 16892
+# Current directory: E:/Experiements/Experiement6/multiply
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42204 E:\Experiements\Experiement6\multiply\multiply.xpr
+# Log file: E:/Experiements/Experiement6/multiply/vivado.log
+# Journal file: E:/Experiements/Experiement6/multiply\vivado.jou
+# Running On: StevenKlaus, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Experiements/Experiement6/multiply/multiply.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files E:/Experiements/Experiement6/multiply/src/top.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/Experiements/Experiement6/multiply/src/top.xdc
+file mkdir E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1
+file mkdir E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new
+close [ open E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new/top.xdc w ]
+add_files -fileset constrs_1 E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new/top.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_sim
+launch_simulation
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation

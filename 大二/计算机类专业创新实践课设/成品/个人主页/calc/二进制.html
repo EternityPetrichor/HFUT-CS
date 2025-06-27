@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>二进制计算器</title>
+  <link rel="stylesheet" type="text/css" href="erjinzhi.css">
+  
+</head>
+<body>
+  <div class="ribbon">
+    <a href="./十进制.html"><span>十进制计算器</span></a>
+      <a href="./二进制.html"><span>二进制计算器</span></a>
+    </div>
+  <div class="container">
+    <h1>二进制计算器</h1>
+
+    <input type="text" id="number1" placeholder="请输入第一个二进制数">
+    <input type="text" id="number2" placeholder="请输入第二个二进制数">
+
+    <input type="button" value="加法" onclick="add()">
+    <input type="button" value="减法" onclick="subtract()">
+    <input type="button" value="乘法" onclick="multiply()">
+    <input type="button" value="除法" onclick="divide()">
+    <input type="button" value="与" onclick="and()">
+    <input type="button" value="或" onclick="or()">
+
+    <h2>结果：</h2>
+    <div id="result"></div>
+  </div>
+
+  <script src="erjinzhi.js"></script>
+</body>
+</html>

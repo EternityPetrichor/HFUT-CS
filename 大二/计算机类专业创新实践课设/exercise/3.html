@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页计算器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://lmg.jj20.com/up/allimg/4k/s/01/210924160915H11-0-lp.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+    .calculator {
+      margin: 20px auto;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .display {
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: right;
+      margin-bottom: 10px;
+      /*resize: none;*/
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+    }
+
+    .button {
+      background-color: #eaeaea;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #d3d3d3;
+    }
+
+    .button.operator {
+      background-color: #f5a623;
+      color: #ffffff;
+    }
+
+    .button.equals {
+      background-color: #4caf50;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display"></div>
+    <div class="buttons">
+      <div class="button" onclick="deleteLastChar()"><-</div>
+      <div class="button" onclick="clearDisplay()">清除</div>
+      <div class="button" onclick="appendToDisplay('7')">7</div>
+      <div class="button" onclick="appendToDisplay('8')">8</div>
+      <div class="button" onclick="appendToDisplay('9')">9</div>
+      <div class="button operator" onclick="appendToDisplay('+')">+</div>
+      <div class="button" onclick="appendToDisplay('4')">4</div>
+      <div class="button" onclick="appendToDisplay('5')">5</div>
+      <div class="button" onclick="appendToDisplay('6')">6</div>
+      <div class="button operator" onclick="appendToDisplay('-')">-</div>
+      <div class="button" onclick="appendToDisplay('1')">1</div>
+      <div class="button" onclick="appendToDisplay('2')">2</div>
+      <div class="button" onclick="appendToDisplay('3')">3</div>
+      <div class="button operator" onclick="appendToDisplay('*')">*</div>
+      <div class="button" onclick="appendToDisplay('0')">0</div>
+      <div class="button" onclick="appendToDisplay('.')">.</div>
+      <div class="button operator" onclick="appendToDisplay('/')">/</div>
+      <div class="button operator" onclick="appendToDisplay('(')">(</div>
+      <div class="button operator" onclick="appendToDisplay(')')">)</div>
+      <div class="button equals" onclick="calculate()">=</div>
+      <div class="button" onclick="clearDisplay()">C</div>
+    </div>
+  </div>
+
+  <script>
+    function deleteLastChar() {
+      var display = document.getElementById("display");
+      display.value = display.value.slice(0, -1);
+    }
+    function appendToDisplay(value) {
+      document.getElementById('display').innerText += value;
+    }
+    // function appendToDisplay(value) {
+    //   var display = document.getElementById("display");
+    //   display.value += value;
+    // }
+
+    function calculate() {
+      var display = document.getElementById('display').innerText;
+      var result = evaluateExpression(display);
+      document.getElementById('display').innerText = result;
+    }
+
+    function evaluateExpression(expression) {
+      var result;
+      try {
+        result = eval(expression);
+      } catch (error) {
+        result = "Error";
+      }
+      return result;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').innerText = '';
+    }
+  </script>
+</body>
+</html>

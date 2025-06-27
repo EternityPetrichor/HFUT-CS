@@ -1,0 +1,1577 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Apr 22 15:33:44 2024
+| Host         : StevenKlaus running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a35t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  39          
+TIMING-23  Warning           Combinational loop found     1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (39)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (55)
+5. checking no_input_delay (8)
+6. checking no_output_delay (22)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (1)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (39)
+-------------------------
+ There are 39 register/latch pins with no clock driven by root clock pin: clk0_out_BUFG_inst/O (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (55)
+-------------------------------------------------
+ There are 55 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (8)
+------------------------------
+ There are 8 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (22)
+--------------------------------
+ There are 22 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (1)
+---------------------
+ There is 1 combinational loop in the design. (HIGH)
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   77          inf        0.000                      0                   77           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            77 Endpoints
+Min Delay            77 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            mul[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        31.586ns  (logic 13.880ns (43.943%)  route 17.707ns (56.057%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           1.115    25.607    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I2_O)        0.150    25.757 r  u_ShowEightSeg7/mul_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.067    27.824    mul_OBUF[1]
+    A4                   OBUF (Prop_obuf_I_O)         3.763    31.586 r  mul_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    31.586    mul[1]
+    A4                                                                r  mul[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            mul[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        31.300ns  (logic 13.658ns (43.636%)  route 17.642ns (56.364%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           1.115    25.607    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I2_O)        0.124    25.731 r  u_ShowEightSeg7/mul_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.002    27.733    mul_OBUF[2]
+    A3                   OBUF (Prop_obuf_I_O)         3.567    31.300 r  mul_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    31.300    mul[2]
+    A3                                                                r  mul[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        31.274ns  (logic 13.867ns (44.341%)  route 17.407ns (55.659%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           1.353    25.845    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I2_O)        0.149    25.994 r  u_ShowEightSeg7/result_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.529    27.523    result_OBUF[2]
+    D3                   OBUF (Prop_obuf_I_O)         3.751    31.274 r  result_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    31.274    result[2]
+    D3                                                                r  result[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        31.175ns  (logic 13.635ns (43.736%)  route 17.541ns (56.264%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           1.353    25.845    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I2_O)        0.124    25.969 r  u_ShowEightSeg7/result_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.663    27.632    result_OBUF[1]
+    E3                   OBUF (Prop_obuf_I_O)         3.544    31.175 r  result_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    31.175    result[1]
+    E3                                                                r  result[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            mul[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        31.171ns  (logic 13.839ns (44.398%)  route 17.332ns (55.602%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           0.947    25.439    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I0_O)        0.119    25.558 r  u_ShowEightSeg7/mul_OBUF[7]_inst_i_1/O
+                         net (fo=1, routed)           1.860    27.418    mul_OBUF[7]
+    D5                   OBUF (Prop_obuf_I_O)         3.753    31.171 r  mul_OBUF[7]_inst/O
+                         net (fo=0)                   0.000    31.171    mul[7]
+    D5                                                                r  mul[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        30.993ns  (logic 14.105ns (45.510%)  route 16.888ns (54.490%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=2 LUT6=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.177    22.005    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y63         LUT5 (Prop_lut5_I1_O)        0.355    22.360 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_19/O
+                         net (fo=1, routed)           0.433    22.794    u_Bit8_to_8421/data6[2]
+    SLICE_X63Y63         LUT6 (Prop_lut6_I3_O)        0.326    23.120 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_6/O
+                         net (fo=2, routed)           1.002    24.121    u_ShowEightSeg7/result_OBUF[3]_inst_i_1_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I4_O)        0.124    24.245 r  u_ShowEightSeg7/result_OBUF[6]_inst_i_2/O
+                         net (fo=3, routed)           1.031    25.276    u_ShowEightSeg7/result_OBUF[6]_inst_i_2_n_0
+    SLICE_X64Y70         LUT5 (Prop_lut5_I0_O)        0.150    25.426 r  u_ShowEightSeg7/result_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           1.807    27.233    result_OBUF[5]
+    E2                   OBUF (Prop_obuf_I_O)         3.760    30.993 r  result_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    30.993    result[5]
+    E2                                                                r  result[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        30.940ns  (logic 13.869ns (44.827%)  route 17.070ns (55.173%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           0.871    25.364    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y69         LUT5 (Prop_lut5_I1_O)        0.150    25.514 r  u_ShowEightSeg7/result_OBUF[7]_inst_i_1/O
+                         net (fo=1, routed)           1.674    27.187    result_OBUF[7]
+    H2                   OBUF (Prop_obuf_I_O)         3.752    30.940 r  result_OBUF[7]_inst/O
+                         net (fo=0)                   0.000    30.940    result[7]
+    H2                                                                r  result[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        30.887ns  (logic 13.631ns (44.132%)  route 17.256ns (55.868%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           0.871    25.364    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y69         LUT5 (Prop_lut5_I2_O)        0.124    25.488 r  u_ShowEightSeg7/result_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.859    27.347    result_OBUF[4]
+    F3                   OBUF (Prop_obuf_I_O)         3.540    30.887 r  result_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    30.887    result[4]
+    F3                                                                r  result[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            mul[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        30.844ns  (logic 13.651ns (44.259%)  route 17.193ns (55.741%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.474    22.302    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y62         LUT6 (Prop_lut6_I4_O)        0.329    22.631 r  u_Bit8_to_8421/mul_OBUF[6]_inst_i_3/O
+                         net (fo=1, routed)           0.789    23.421    u_ShowEightSeg7/mul_OBUF[7]_inst_i_2
+    SLICE_X65Y62         LUT6 (Prop_lut6_I0_O)        0.124    23.545 r  u_ShowEightSeg7/mul_OBUF[6]_inst_i_2/O
+                         net (fo=5, routed)           0.824    24.368    u_Bit8_to_8421/mul_OBUF[7]_inst_i_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I0_O)        0.124    24.492 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_2/O
+                         net (fo=8, routed)           0.947    25.439    u_ShowEightSeg7/result[1][0]
+    SLICE_X65Y75         LUT5 (Prop_lut5_I2_O)        0.124    25.563 r  u_ShowEightSeg7/mul_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.721    27.284    mul_OBUF[4]
+    A1                   OBUF (Prop_obuf_I_O)         3.560    30.844 r  mul_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    30.844    mul[4]
+    A1                                                                r  mul[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/temp_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            result[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        30.796ns  (logic 13.854ns (44.986%)  route 16.942ns (55.014%))
+  Logic Levels:           38  (CARRY4=23 FDRE=1 LUT2=1 LUT3=5 LUT4=3 LUT5=2 LUT6=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y57         FDRE                         0.000     0.000 r  u_MULTU_4bit/temp_reg[2]/C
+    SLICE_X63Y57         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_MULTU_4bit/temp_reg[2]/Q
+                         net (fo=7, routed)           1.116     1.572    u_MULTU_4bit/Q[2]
+    SLICE_X63Y60         LUT3 (Prop_lut3_I0_O)        0.124     1.696 r  u_MULTU_4bit/bcd0__0_carry_i_6/O
+                         net (fo=1, routed)           0.000     1.696    u_Bit8_to_8421/S[0]
+    SLICE_X63Y60         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     2.228 r  u_Bit8_to_8421/bcd0__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     2.228    u_Bit8_to_8421/bcd0__0_carry_n_0
+    SLICE_X63Y61         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     2.499 r  u_Bit8_to_8421/bcd0__0_carry__0/CO[0]
+                         net (fo=35, routed)          1.439     3.937    u_MULTU_4bit/CO[0]
+    SLICE_X62Y57         LUT3 (Prop_lut3_I1_O)        0.373     4.310 r  u_MULTU_4bit/bcd1__0_carry_i_2/O
+                         net (fo=1, routed)           0.000     4.310    u_Bit8_to_8421/mul_OBUF[7]_inst_i_314_0[1]
+    SLICE_X62Y57         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.708 r  u_Bit8_to_8421/bcd1__0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.708    u_Bit8_to_8421/bcd1__0_carry_n_0
+    SLICE_X62Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.822 r  u_Bit8_to_8421/bcd1__0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.822    u_Bit8_to_8421/bcd1__0_carry__0_n_0
+    SLICE_X62Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.936 r  u_Bit8_to_8421/bcd1__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     4.936    u_Bit8_to_8421/bcd1__0_carry__1_n_0
+    SLICE_X62Y60         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     5.249 r  u_Bit8_to_8421/bcd1__0_carry__2/O[3]
+                         net (fo=39, routed)          2.636     7.885    u_Bit8_to_8421/bcd10_out[16]
+    SLICE_X59Y56         LUT3 (Prop_lut3_I2_O)        0.306     8.191 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_379/O
+                         net (fo=3, routed)           0.594     8.785    u_Bit8_to_8421/mul_OBUF[7]_inst_i_379_n_0
+    SLICE_X57Y56         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398     9.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_544/CO[3]
+                         net (fo=1, routed)           0.000     9.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_544_n_0
+    SLICE_X57Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_464/CO[3]
+                         net (fo=1, routed)           0.000     9.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_464_n_0
+    SLICE_X57Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.411 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_334/CO[3]
+                         net (fo=1, routed)           0.000     9.411    u_Bit8_to_8421/mul_OBUF[7]_inst_i_334_n_0
+    SLICE_X57Y59         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.745 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_263/O[1]
+                         net (fo=2, routed)           0.835    10.580    u_Bit8_to_8421/mul_OBUF[7]_inst_i_263_n_6
+    SLICE_X55Y60         LUT3 (Prop_lut3_I2_O)        0.331    10.911 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_152/O
+                         net (fo=2, routed)           1.054    11.965    u_Bit8_to_8421/mul_OBUF[7]_inst_i_152_n_0
+    SLICE_X55Y60         LUT4 (Prop_lut4_I3_O)        0.326    12.291 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_156/O
+                         net (fo=1, routed)           0.000    12.291    u_Bit8_to_8421/mul_OBUF[7]_inst_i_156_n_0
+    SLICE_X55Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    12.841 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_82/CO[3]
+                         net (fo=1, routed)           0.000    12.841    u_Bit8_to_8421/mul_OBUF[7]_inst_i_82_n_0
+    SLICE_X55Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.955 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_79/CO[3]
+                         net (fo=1, routed)           0.000    12.955    u_Bit8_to_8421/mul_OBUF[7]_inst_i_79_n_0
+    SLICE_X55Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.069 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_511/CO[3]
+                         net (fo=1, routed)           0.000    13.069    u_Bit8_to_8421/mul_OBUF[7]_inst_i_511_n_0
+    SLICE_X55Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.183 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_425/CO[3]
+                         net (fo=1, routed)           0.000    13.183    u_Bit8_to_8421/mul_OBUF[7]_inst_i_425_n_0
+    SLICE_X55Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    13.297 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_289/CO[3]
+                         net (fo=1, routed)           0.000    13.297    u_Bit8_to_8421/mul_OBUF[7]_inst_i_289_n_0
+    SLICE_X55Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    13.631 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_200/O[1]
+                         net (fo=2, routed)           0.794    14.425    u_Bit8_to_8421/mul_OBUF[7]_inst_i_200_n_6
+    SLICE_X54Y64         LUT3 (Prop_lut3_I0_O)        0.331    14.756 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_192/O
+                         net (fo=2, routed)           0.859    15.616    u_Bit8_to_8421/mul_OBUF[7]_inst_i_192_n_0
+    SLICE_X54Y64         LUT4 (Prop_lut4_I3_O)        0.348    15.964 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_196/O
+                         net (fo=1, routed)           0.000    15.964    u_Bit8_to_8421/mul_OBUF[7]_inst_i_196_n_0
+    SLICE_X54Y64         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380    16.344 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_94/CO[3]
+                         net (fo=1, routed)           0.000    16.344    u_Bit8_to_8421/mul_OBUF[7]_inst_i_94_n_0
+    SLICE_X54Y65         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.563 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_52/O[0]
+                         net (fo=3, routed)           0.991    17.553    u_Bit8_to_8421/mul_OBUF[7]_inst_i_52_n_7
+    SLICE_X53Y64         LUT2 (Prop_lut2_I0_O)        0.295    17.848 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_175/O
+                         net (fo=1, routed)           0.000    17.848    u_Bit8_to_8421/mul_OBUF[7]_inst_i_175_n_0
+    SLICE_X53Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    18.249 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_85/CO[3]
+                         net (fo=1, routed)           0.000    18.249    u_Bit8_to_8421/mul_OBUF[7]_inst_i_85_n_0
+    SLICE_X53Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    18.583 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_46/O[1]
+                         net (fo=3, routed)           1.121    19.704    u_Bit8_to_8421/mul_OBUF[7]_inst_i_46_n_6
+    SLICE_X57Y67         LUT4 (Prop_lut4_I2_O)        0.303    20.007 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_112/O
+                         net (fo=1, routed)           0.000    20.007    u_Bit8_to_8421/mul_OBUF[7]_inst_i_112_n_0
+    SLICE_X57Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.557 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_61/CO[3]
+                         net (fo=1, routed)           0.000    20.557    u_Bit8_to_8421/mul_OBUF[7]_inst_i_61_n_0
+    SLICE_X57Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    20.671 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_32/CO[3]
+                         net (fo=1, routed)           0.000    20.671    u_Bit8_to_8421/mul_OBUF[7]_inst_i_32_n_0
+    SLICE_X57Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    20.828 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_22/CO[1]
+                         net (fo=8, routed)           1.177    22.005    u_Bit8_to_8421/mul_OBUF[7]_inst_i_22_n_2
+    SLICE_X63Y63         LUT5 (Prop_lut5_I1_O)        0.355    22.360 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_19/O
+                         net (fo=1, routed)           0.433    22.794    u_Bit8_to_8421/data6[2]
+    SLICE_X63Y63         LUT6 (Prop_lut6_I3_O)        0.326    23.120 r  u_Bit8_to_8421/mul_OBUF[7]_inst_i_6/O
+                         net (fo=2, routed)           1.002    24.121    u_ShowEightSeg7/result_OBUF[3]_inst_i_1_1
+    SLICE_X64Y63         LUT6 (Prop_lut6_I4_O)        0.124    24.245 r  u_ShowEightSeg7/result_OBUF[6]_inst_i_2/O
+                         net (fo=3, routed)           1.031    25.276    u_ShowEightSeg7/result_OBUF[6]_inst_i_2_n_0
+    SLICE_X64Y70         LUT5 (Prop_lut5_I0_O)        0.124    25.400 r  u_ShowEightSeg7/result_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.861    27.261    result_OBUF[3]
+    F4                   OBUF (Prop_obuf_I_O)         3.535    30.796 r  result_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    30.796    result[3]
+    F4                                                                r  result[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_MULTU_4bit/add0_1_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/temp_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.220ns  (logic 0.164ns (74.580%)  route 0.056ns (25.420%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y56         FDRE                         0.000     0.000 r  u_MULTU_4bit/add0_1_reg[1]/C
+    SLICE_X64Y56         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  u_MULTU_4bit/add0_1_reg[1]/Q
+                         net (fo=1, routed)           0.056     0.220    u_MULTU_4bit/add0_1[1]
+    SLICE_X64Y56         FDRE                                         r  u_MULTU_4bit/temp_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored0_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add0_1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.274ns  (logic 0.164ns (59.853%)  route 0.110ns (40.147%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y45         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored0_reg[0]/C
+    SLICE_X64Y45         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  u_MULTU_4bit/stored0_reg[0]/Q
+                         net (fo=1, routed)           0.110     0.274    u_MULTU_4bit/stored0[0]
+    SLICE_X64Y44         FDRE                                         r  u_MULTU_4bit/add0_1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored1_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add0_1_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.343ns  (logic 0.256ns (74.613%)  route 0.087ns (25.387%))
+  Logic Levels:           3  (CARRY4=1 FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y56         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored1_reg[1]/C
+    SLICE_X65Y56         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_MULTU_4bit/stored1_reg[1]/Q
+                         net (fo=2, routed)           0.087     0.228    u_MULTU_4bit/stored1[1]
+    SLICE_X64Y56         LUT2 (Prop_lut2_I0_O)        0.045     0.273 r  u_MULTU_4bit/add0_1[4]_i_4/O
+                         net (fo=1, routed)           0.000     0.273    u_MULTU_4bit/add0_1[4]_i_4_n_0
+    SLICE_X64Y56         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     0.343 r  u_MULTU_4bit/add0_1_reg[4]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.343    u_MULTU_4bit/add0_10[1]
+    SLICE_X64Y56         FDRE                                         r  u_MULTU_4bit/add0_1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_ShowEightSeg7/state_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_ShowEightSeg7/state_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y68         FDRE                         0.000     0.000 r  u_ShowEightSeg7/state_reg[1]/C
+    SLICE_X65Y68         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_ShowEightSeg7/state_reg[1]/Q
+                         net (fo=17, routed)          0.168     0.309    u_ShowEightSeg7/state[1]
+    SLICE_X65Y68         LUT2 (Prop_lut2_I0_O)        0.045     0.354 r  u_ShowEightSeg7/state[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.354    u_ShowEightSeg7/state[1]_i_1_n_0
+    SLICE_X65Y68         FDRE                                         r  u_ShowEightSeg7/state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored2_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add2_3_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.355ns  (logic 0.256ns (72.064%)  route 0.099ns (27.936%))
+  Logic Levels:           3  (CARRY4=1 FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y58         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored2_reg[3]/C
+    SLICE_X65Y58         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_MULTU_4bit/stored2_reg[3]/Q
+                         net (fo=2, routed)           0.099     0.240    u_MULTU_4bit/stored2[3]
+    SLICE_X64Y58         LUT2 (Prop_lut2_I0_O)        0.045     0.285 r  u_MULTU_4bit/add2_3[6]_i_4/O
+                         net (fo=1, routed)           0.000     0.285    u_MULTU_4bit/add2_3[6]_i_4_n_0
+    SLICE_X64Y58         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     0.355 r  u_MULTU_4bit/add2_3_reg[6]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.355    u_MULTU_4bit/add2_30[3]
+    SLICE_X64Y58         FDRE                                         r  u_MULTU_4bit/add2_3_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored1_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add0_1_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.362ns  (logic 0.250ns (68.988%)  route 0.112ns (31.012%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y56         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored1_reg[4]/C
+    SLICE_X65Y56         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_MULTU_4bit/stored1_reg[4]/Q
+                         net (fo=1, routed)           0.112     0.253    u_MULTU_4bit/stored1[4]
+    SLICE_X64Y56         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.109     0.362 r  u_MULTU_4bit/add0_1_reg[4]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.362    u_MULTU_4bit/add0_10[4]
+    SLICE_X64Y56         FDRE                                         r  u_MULTU_4bit/add0_1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored1_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add0_1_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.371ns  (logic 0.284ns (76.528%)  route 0.087ns (23.472%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y56         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored1_reg[1]/C
+    SLICE_X65Y56         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_MULTU_4bit/stored1_reg[1]/Q
+                         net (fo=2, routed)           0.087     0.228    u_MULTU_4bit/stored1[1]
+    SLICE_X64Y56         CARRY4 (Prop_carry4_DI[0]_O[1])
+                                                      0.143     0.371 r  u_MULTU_4bit/add0_1_reg[4]_i_1/O[1]
+                         net (fo=1, routed)           0.000     0.371    u_MULTU_4bit/add0_10[2]
+    SLICE_X64Y56         FDRE                                         r  u_MULTU_4bit/add0_1_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/add2_3_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/temp_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.374ns  (logic 0.279ns (74.565%)  route 0.095ns (25.435%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y58         FDRE                         0.000     0.000 r  u_MULTU_4bit/add2_3_reg[6]/C
+    SLICE_X64Y58         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  u_MULTU_4bit/add2_3_reg[6]/Q
+                         net (fo=1, routed)           0.095     0.259    u_MULTU_4bit/add2_3[6]
+    SLICE_X63Y58         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.374 r  u_MULTU_4bit/temp_reg[7]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.374    u_MULTU_4bit/temp0[6]
+    SLICE_X63Y58         FDRE                                         r  u_MULTU_4bit/temp_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/stored2_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/add2_3_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.390ns  (logic 0.291ns (74.570%)  route 0.099ns (25.430%))
+  Logic Levels:           3  (CARRY4=1 FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y58         FDRE                         0.000     0.000 r  u_MULTU_4bit/stored2_reg[3]/C
+    SLICE_X65Y58         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_MULTU_4bit/stored2_reg[3]/Q
+                         net (fo=2, routed)           0.099     0.240    u_MULTU_4bit/stored2[3]
+    SLICE_X64Y58         LUT2 (Prop_lut2_I0_O)        0.045     0.285 r  u_MULTU_4bit/add2_3[6]_i_4/O
+                         net (fo=1, routed)           0.000     0.285    u_MULTU_4bit/add2_3[6]_i_4_n_0
+    SLICE_X64Y58         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.105     0.390 r  u_MULTU_4bit/add2_3_reg[6]_i_1/O[1]
+                         net (fo=1, routed)           0.000     0.390    u_MULTU_4bit/add2_30[4]
+    SLICE_X64Y58         FDRE                                         r  u_MULTU_4bit/add2_3_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_MULTU_4bit/add0_1_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_MULTU_4bit/temp_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.392ns  (logic 0.164ns (41.835%)  route 0.228ns (58.165%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y44         FDRE                         0.000     0.000 r  u_MULTU_4bit/add0_1_reg[0]/C
+    SLICE_X64Y44         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  u_MULTU_4bit/add0_1_reg[0]/Q
+                         net (fo=1, routed)           0.228     0.392    u_MULTU_4bit/add0_1[0]
+    SLICE_X64Y48         FDRE                                         r  u_MULTU_4bit/temp_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

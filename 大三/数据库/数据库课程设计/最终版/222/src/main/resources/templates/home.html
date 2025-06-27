@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<!--head部分-->
+<head th:include="layout :: htmlhead" th:with="title='家具城进销存管理系统'">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!--头-->
+    <div th:replace="fragments/head :: header"></div>
+
+    <!--主体区域-->
+    <div class="layui-body" style="background-color: #D0D0D0">
+        <div class="layui-container" style="margin-top:20px">
+            <div class="layui-row">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                销售额<span class="layui-badge layui-badge-green pull-right">日</span>
+                            </div>
+                            <div class="layui-card-body">
+                                <p class="lay-big-font" id="newmoneynum">0</p>
+                                <p>总销售额<span class="pull-right" id="allmoneynum">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                订单量<span class="layui-badge layui-badge-blue pull-right">日</span>
+                            </div>
+                            <div class="layui-card-body">
+                                <p class="lay-big-font" id="newordernum">0</p>
+                                <p>总定单量<span class="pull-right" id="allordernum">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                新增产品<span class="layui-badge layui-badge-red pull-right">日</span>
+                            </div>
+                            <div class="layui-card-body">
+                                <p class="lay-big-font" id="newproductnum">0</p>
+                                <p>产品总数<span class="pull-right" id="allproductnum">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                        <div class="layui-card">
+                            <div class="layui-card-header">
+                                新增用户
+                                <span class="icon-text pull-right" lay-tips="指标说明" lay-direction="4" lay-offset="5px,5px">
+                        <i class="layui-icon layui-icon-tips"></i>
+                    </span>
+                            </div>
+                            <div class="layui-card-body">
+                                <p class="lay-big-font" id="newUser">0</p>
+                                <p>总用户<span class="pull-right" id="allUser">0人</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md12">
+                        <div class="layui-card">
+                            <div class="layui-card-header"></div>
+                            <div class="layui-card-body">
+                                <div id="EchartZhu" style="width: 100%;height: 500px;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/error.js"></script>
+    <!--底部-->
+    <div th:replace="fragments/footer :: footer"></div>
+    <script src="/js/home/home.js"></script>
+</div>
+</body>
+</html>

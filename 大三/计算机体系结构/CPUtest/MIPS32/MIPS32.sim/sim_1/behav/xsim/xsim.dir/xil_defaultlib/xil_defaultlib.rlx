@@ -1,0 +1,26 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v,1704250532,verilog,,,D:/作业/计算机体系结构/CPUtest/defines.v,x7seg_top_tb,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v,1393645205,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,ctrl,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,1393724521,verilog,,,,,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v,1393725174,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,div,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v,1704256648,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,ex,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v,1393685541,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,ex_mem,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v,1703925991,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v,,fenping,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v,1392001755,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,hilo_reg,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v,1704256651,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,id,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v,1704256652,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,id_ex,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v,1704256651,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,if_id,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v,1704263178,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,inst_rom,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v,1393209941,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,mem,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v,1393429470,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,mem_wb,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v,1396150944,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,openmips,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v,1703923767,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,openmips_min_sopc,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v,1704256650,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,pc_reg,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v,1704256653,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/defines.v,regfile,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v,1672554190,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v,,x7seg,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v,1704269305,verilog,,D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v,,x7seg_top,,,,,,,,
+D:/作业/计算机体系结构/CPUtest/defines.v,1393724521,verilog,,,,,,,,,,,,

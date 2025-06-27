@@ -1,0 +1,148 @@
+import os
+import numpy as np
+from PIL import Image
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader, Dataset
+from torchvision import transforms
+from torchvision.utils import save_image
+
+# --------- 1. 数据集预处理 ---------
+class ContourDataset(Dataset):
+    def __init__(self, folder_path, img_size, output_folder):
+        self.folder_path = folder_path
+        self.img_size = img_size
+        self.output_folder = output_folder
+        os.makedirs(output_folder, exist_ok=True)
+        self.image_paths = [
+            os.path.join(folder_path, img) for img in os.listdir(folder_path) if img.endswith((".png", ".jpg"))
+        ]
+        self.transform = transforms.Compose([
+            transforms.Resize(img_size),
+            transforms.ToTensor(),
+            transforms.Normalize([0.5], [0.5])  # Normalize to [-1, 1]
+        ])
+
+    def __len__(self):
+        return len(self.image_paths)
+
+    def __getitem__(self, idx):
+        img_path = self.image_paths[idx]
+        img = Image.open(img_path).convert("L")  # 转为灰度图像
+        img_resized = img.resize(self.img_size)  # Resize before tensor conversion
+        img_resized.save(os.path.join(self.output_folder, f"resized_{idx}.png"))  # Save resized image
+        img = self.transform(img_resized)
+        return img
+
+# --------- 2. 定义生成器 ---------
+class Generator(nn.Module):
+    def __init__(self, latent_dim, img_shape):
+        super(Generator, self).__init__()
+        self.init_size = img_shape[1] // 4  # Initial size after upsampling
+        self.l1 = nn.Sequential(nn.Linear(latent_dim, 128 * self.init_size ** 2))
+
+        self.conv_blocks = nn.Sequential(
+            nn.BatchNorm2d(128),
+            nn.Upsample(scale_factor=2),
+            nn.Conv2d(128, 128, 3, stride=1, padding=1),
+            nn.BatchNorm2d(128),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Upsample(scale_factor=2),
+            nn.Conv2d(128, 64, 3, stride=1, padding=1),
+            nn.BatchNorm2d(64),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Conv2d(64, img_shape[0], 3, stride=1, padding=1),
+            nn.Tanh(),
+        )
+
+    def forward(self, z):
+        out = self.l1(z)
+        out = out.view(out.size(0), 128, self.init_size, self.init_size)
+        img = self.conv_blocks(out)
+        return img
+
+# --------- 3. 定义判别器 ---------
+class Discriminator(nn.Module):
+    def __init__(self, img_shape):
+        super(Discriminator, self).__init__()
+        self.model = nn.Sequential(
+            nn.Conv2d(img_shape[0], 64, 3, stride=2, padding=1),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Dropout(0.25),
+            nn.Conv2d(64, 128, 3, stride=2, padding=1),
+            nn.BatchNorm2d(128),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Dropout(0.25),
+            nn.Flatten(),
+            nn.Linear(128 * (img_shape[1] // 4) * (img_shape[2] // 4), 1),
+            nn.Sigmoid(),
+        )
+
+    def forward(self, img):
+        validity = self.model(img)
+        return validity
+
+# --------- 4. 定义训练过程 ---------
+def train_gan(generator, discriminator, data_loader, latent_dim, img_shape, epochs=200, batch_size=32, lr=0.0002):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    generator.to(device)
+    discriminator.to(device)
+
+    optimizer_G = torch.optim.Adam(generator.parameters(), lr=lr, betas=(0.5, 0.999))
+    optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=lr, betas=(0.5, 0.999))
+    adversarial_loss = nn.BCELoss()
+
+    for epoch in range(epochs):
+        for i, imgs in enumerate(data_loader):
+            # Configure input
+            real_imgs = imgs.to(device)
+
+            # Train Discriminator
+            optimizer_D.zero_grad()
+            z = torch.randn(imgs.size(0), latent_dim).to(device)
+            fake_imgs = generator(z)
+            real_loss = adversarial_loss(discriminator(real_imgs), torch.ones(imgs.size(0), 1).to(device))
+            fake_loss = adversarial_loss(discriminator(fake_imgs.detach()), torch.zeros(imgs.size(0), 1).to(device))
+            d_loss = (real_loss + fake_loss) / 2
+            d_loss.backward()
+            optimizer_D.step()
+
+            # Train Generator
+            optimizer_G.zero_grad()
+            g_loss = adversarial_loss(discriminator(fake_imgs), torch.ones(imgs.size(0), 1).to(device))
+            g_loss.backward()
+            optimizer_G.step()
+
+        print(f"[Epoch {epoch}/{epochs}] [D loss: {d_loss.item()}] [G loss: {g_loss.item()}]")
+
+        # Save generated samples every 10 epochs
+        if epoch % 10 == 0:
+            save_image(fake_imgs.data[:25], f"images/{epoch}.png", nrow=5, normalize=True)
+
+    # Generate and save the 8th continent image
+    z = torch.randn(1, latent_dim).to(device)
+    generated_img = generator(z)
+    save_image(generated_img.data, "images/8th_continent.png", normalize=True)
+    print("Generated the 8th continent image.")
+
+# --------- 5. 执行代码 ---------
+if __name__ == "__main__":
+    # 数据路径和图像大小
+    data_path = "./data"
+    # data_path = "./map/map1"
+    output_folder = "./resized_images"
+    # output_folder = "./map/resized_images"
+    img_size = (64, 64)  # 将所有图像裁剪为相同大小
+    latent_dim = 100
+    img_shape = (1, *img_size)  # 灰度图像有1个通道
+
+    # 加载数据
+    dataset = ContourDataset(data_path, img_size, output_folder)
+    data_loader = DataLoader(dataset, batch_size=32, shuffle=True)
+
+    # 初始化模型
+    generator = Generator(latent_dim, img_shape)
+    discriminator = Discriminator(img_shape)
+
+    # 训练GAN
+    train_gan(generator, discriminator, data_loader, latent_dim, img_shape,epochs = 10000)

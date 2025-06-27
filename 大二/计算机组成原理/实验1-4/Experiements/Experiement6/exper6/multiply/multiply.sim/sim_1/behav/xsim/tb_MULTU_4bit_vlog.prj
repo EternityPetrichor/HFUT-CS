@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../src/Bit4_to_8421.v" \
+"../../../../src/CLK_DIV.v" \
+"../../../../src/MULTU_4bit.v" \
+"../../../../src/ShowEightSeg7.v" \
+"../../../../src/tb_MULTU_4bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

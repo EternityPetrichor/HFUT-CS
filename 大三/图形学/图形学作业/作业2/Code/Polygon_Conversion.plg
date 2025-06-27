@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Polygon_Conversion - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPBAAD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Polygon_Conversion.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\作业\图形学作业\作业2\Code\Polygon_ConversionView.cpp"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSPBAAD.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPBAAE.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Polygon_Conversion.pdb" /debug /machine:I386 /out:"Debug/Polygon_Conversion.exe" /pdbtype:sept 
+".\Debug\ColorWnd.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Polygon_Conversion.obj"
+".\Debug\Polygon_ConversionDoc.obj"
+".\Debug\Polygon_ConversionView.obj"
+".\Debug\SettingDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Polygon_Conversion.res"
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSPBAAE.tmp"
+<h3>Output Window</h3>
+Compiling...
+Polygon_ConversionView.cpp
+D:\作业\图形学作业\作业2\Code\Polygon_ConversionView.cpp(390) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\作业\图形学作业\作业2\Code\Polygon_ConversionView.cpp(391) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\作业\图形学作业\作业2\Code\Polygon_ConversionView.cpp(401) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\作业\图形学作业\作业2\Code\Polygon_ConversionView.cpp(402) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Polygon_Conversion.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ColorWnd.sbr" ".\Debug\MainFrm.sbr" ".\Debug\Polygon_Conversion.sbr" ".\Debug\Polygon_ConversionDoc.sbr" ".\Debug\Polygon_ConversionView.sbr" ".\Debug\SettingDialog.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Polygon_Conversion.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

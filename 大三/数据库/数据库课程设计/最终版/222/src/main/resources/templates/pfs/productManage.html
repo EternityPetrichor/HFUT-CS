@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head th:include="layout :: htmlhead" th:with="title='产品管理'"></head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!--头-->
+    <div th:replace="fragments/head :: header"></div>
+
+    <div class="layui-body" style="margin: 1%">
+
+        <form id="userSearch" class="layui-form layui-form-pane" method="post" action="" style="margin-top: 20px;">
+            <div class="layui-form-item">
+                <label class="layui-form-label">产品名称</label>
+                <div class="layui-input-inline">
+                    <input id="pname" name="pname" autocomplete="off" class="layui-input" type="text"/>
+                </div>
+                <button class="layui-btn"  lay-submit="" lay-filter="searchSubmit">提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </form>
+
+        <!--<hr class="layui-bg-blue"/>-->
+        <hr class="layui-bg-black"/>
+
+        <div style="display:none;" id="currentUser"><shiro:principal property="id"></shiro:principal></div>
+
+        <table id="productList" lay-filter="productTable"></table>
+
+        <script type="text/html" id="optBar">
+            <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="setOrders">登记出库</a>
+        </script>
+    </div>
+
+
+    <!--添加或编辑产品-->
+    <div id="setProduct" class="layer_self_wrap" style="width:500px;display:none;">
+        <form id="productForm" class="layui-form layui-form-pane" method="post" action="" style="margin-top: 20px;">
+            <input id="pageNum" type="hidden" name="pageNum"/>
+            <input id="id" type="hidden" name="id"/>
+            <div class="layui-form-item">
+                <label class="layui-form-label">商品名称</label>
+                <div class="layui-input-inline">
+                    <input id="pname1" name="pname" lay-verify="required" autocomplete="off" class="layui-input" type="text"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">价格</label>
+                <div class="layui-input-inline">
+                    <input id="price" name="price" lay-verify="required" autocomplete="off" class="layui-input" type="number"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">库存数量</label>
+                <div class="layui-input-inline">
+                    <input id="stock" name="stock" lay-verify="required" autocomplete="off" class="layui-input" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                           onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产品类型</label>
+                <div class="layui-input-inline">
+                    <input id="pType" name="pType" autocomplete="off" class="layui-input" type="text"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产品描述</label>
+                <div class="layui-input-inline">
+                    <input id="description" name="description" autocomplete="off" class="layui-input" type="text"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">图片</label>
+                <div class="layui-input-inline">
+                    <input id="picture" name="picture" autocomplete="off" class="layui-input" type="text"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产地</label>
+                <div class="layui-input-inline">
+                    <input id="unit" name="unit" autocomplete="off" class="layui-input" type="text" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block" style="margin-left: 10px;">
+                    <button class="layui-btn"  lay-submit="" lay-filter="productSubmit">提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--下单管理-->
+    <div id="setOrders" class="layer_self_wrap" style="width:500px;display:none;">
+        <form id="ordersForm" class="layui-form layui-form-pane" method="post" action="" style="margin-top: 20px;">
+            <input id="pageNum2" type="hidden" name="pageNum"/>
+            <input id="id2" type="hidden" name="id"/>
+            <div class="layui-form-item">
+                <label class="layui-form-label">商品名称</label>
+                <div class="layui-input-inline">
+                    <input id="pname2" name="pname" lay-verify="required" autocomplete="off" class="layui-input" type="text" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">价格</label>
+                <div class="layui-input-inline">
+                    <input id="price2" name="price" lay-verify="required" autocomplete="off" class="layui-input" type="number" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">库存数量</label>
+                <div class="layui-input-inline">
+                    <input id="stock2" name="stock" lay-verify="required" autocomplete="off" class="layui-input" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                           onafterpaste="this.value=this.value.replace(/\D/g,'')" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">订单数量</label>
+                <div class="layui-input-inline">
+                    <input id="num" name="num" lay-verify="required" autocomplete="off" class="layui-input" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                           onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产品类型</label>
+                <div class="layui-input-inline">
+                    <input id="pType2" name="pType" autocomplete="off" class="layui-input" type="text" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产品描述</label>
+                <div class="layui-input-inline">
+                    <input id="description2" name="description" autocomplete="off" class="layui-input" type="text" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">图片</label>
+                <div class="layui-input-inline">
+                    <input id="picture2" name="picture" autocomplete="off" class="layui-input" type="text" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">产地</label>
+                <div class="layui-input-inline">
+                    <input id="unit2" name="unit" autocomplete="off" class="layui-input" type="text" Readonly="true"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block" style="margin-left: 10px;">
+                    <button class="layui-btn"  lay-submit="" lay-filter="ordersSubmit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--底部-->
+    <div th:replace="fragments/footer :: footer"></div>
+    <script src="/js/dateUtils.js"></script>
+    <script src="/js/product/product.js"></script>
+
+</div>
+</body>
+</html>

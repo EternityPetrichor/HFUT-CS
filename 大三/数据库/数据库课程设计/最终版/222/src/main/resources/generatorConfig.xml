@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 数据库的驱动包路径 -->
+    <classPathEntry location="C:\Users\admin\.m2\repository\mysql\mysql-connector-java\8.0.21\mysql-connector-java-8.0.21.jar" />
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!-- 去掉生成文件中的注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!-- 数据库链接URL、用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/sales analysis?serverTimezone=GMT"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+        <!-- <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+          connectionURL="jdbc:oracle:thin:@localhost:1521:XE"
+          userId="car"
+          password="car">
+        </jdbcConnection> -->
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置 当前项目下 .\-->
+        <javaModelGenerator targetPackage="com.base.manager.pojo" targetProject=".\src\main\java">
+            <!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
+            <property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成的映射文件包名和位置 -->
+        <sqlMapGenerator targetPackage="mapper" targetProject=".\src\main\resources">
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.base.manager.dao" targetProject=".\src\main\java">
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+
+        <table tableName="Order" domainObjectName="Order" schema=""></table>
+
+
+    </context>
+</generatorConfiguration>

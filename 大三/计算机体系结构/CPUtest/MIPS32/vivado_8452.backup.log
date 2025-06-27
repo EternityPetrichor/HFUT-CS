@@ -1,0 +1,690 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jan  3 10:54:06 2024
+# Process ID: 8452
+# Current directory: D:/作业/计算机体系结构/CPUtest/MIPS32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12044 D:\作业\计算机体系结构\CPUtest\MIPS32\MIPS32.xpr
+# Log file: D:/作业/计算机体系结构/CPUtest/MIPS32/vivado.log
+# Journal file: D:/作业/计算机体系结构/CPUtest/MIPS32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Desktop/CPUtest/MIPS32' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'MIPS32.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 936.469 ; gain = 262.617
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenping
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" Line 35. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" Line 35. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" Line 35. Module ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" Line 35. Module div doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenping
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.x7seg
+Compiling module xil_defaultlib.x7seg_top
+Compiling module xil_defaultlib.x7seg_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot x7seg_top_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/xsim.dir/x7seg_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan  3 10:56:11 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 946.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 961.660 ; gain = 15.352
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\作业\计算机体系结构\CPUtest\MIPS32\MIPS32.srcs\sources_1\new\inst_rom.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\作业\计算机体系结构\CPUtest\MIPS32\MIPS32.srcs\sim_1\new\x7seg_top_tb.v:]
+set_property ip.user_files_dir D:/CPUtest/MIPS32/MIPS32.ip_user_files [current_project]
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+ERROR: [Common 17-180] Spawn failed: Illegal byte sequence
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+$stop called at time : 4105 ns : File "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.754 ; gain = 0.000
+save_wave_config {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenping
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" Line 35. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" Line 35. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" Line 35. Module ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" Line 35. Module div doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenping
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.x7seg
+Compiling module xil_defaultlib.x7seg_top
+Compiling module xil_defaultlib.x7seg_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot x7seg_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+$stop called at time : 4105 ns : File "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1240.574 ; gain = 2.723
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenping
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" Line 35. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" Line 35. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" Line 35. Module ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" Line 35. Module div doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenping
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.x7seg
+Compiling module xil_defaultlib.x7seg_top
+Compiling module xil_defaultlib.x7seg_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot x7seg_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+$stop called at time : 4105 ns : File "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.410 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenping
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" Line 35. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" Line 35. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" Line 35. Module ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" Line 35. Module div doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenping
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.x7seg
+Compiling module xil_defaultlib.x7seg_top
+Compiling module xil_defaultlib.x7seg_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot x7seg_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+$stop called at time : 4105 ns : File "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.410 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'x7seg_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj x7seg_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/fenping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fenping
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/x7seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+"xelab -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea6fe1d58fda41ada779c9394bc89fab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot x7seg_top_tb_behav xil_defaultlib.x7seg_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex.v" Line 35. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ex_mem.v" Line 35. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/ctrl.v" Line 35. Module ctrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sources_1/new/div.v" Line 35. Module div doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fenping
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.x7seg
+Compiling module xil_defaultlib.x7seg_top
+Compiling module xil_defaultlib.x7seg_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot x7seg_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "x7seg_top_tb_behav -key {Behavioral:sim_1:Functional:x7seg_top_tb} -tclbatch {x7seg_top_tb.tcl} -view {D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/作业/计算机体系结构/CPUtest/MIPS32/x7seg_top_tb_除法.wcfg
+source x7seg_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+$stop called at time : 4105 ns : File "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.srcs/sim_1/new/x7seg_top_tb.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'x7seg_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1955.172 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Jan  3 15:43:09 2024] Launched synth_1...
+Run output will be captured here: D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1/runme.log
+[Wed Jan  3 15:43:09 2024] Launched impl_1...
+Run output will be captured here: D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/impl_1/runme.log
+set_property top x7seg_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Jan  3 15:53:05 2024] Launched synth_1...
+Run output will be captured here: D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1/runme.log
+[Wed Jan  3 15:53:05 2024] Launched impl_1...
+Run output will be captured here: D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1
+
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/simulate.log"
+launch_runs synth_1 -jobs 6
+[Wed Jan  3 15:54:49 2024] Launched synth_1...
+Run output will be captured here: D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/作业/计算机体系结构/CPUtest/MIPS32/MIPS32.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  3 15:56:24 2024...

@@ -1,0 +1,7 @@
+T46.
+1)	为 Windows 操作系统建立一个兼容 Unix/Linux 命令的命令接口；
+2)	实现杂项命令包括 login,password,logout,sort,more,print,>,>>,<,<<,|等，命令的内容与详细格式请查阅 Unix/Linux 命令手册；
+3)	可以字符形式接收命令，执行命令，然后显示命令执行结果；
+
+开发环境：Code::Blocks
+使用方法：将测试用例中的所有txt文件放入D盘，account.txt文件中保存的是用户名和密码，双击打开可执行文件中的OS_Linus.exe，输入正确的杂项命令即可

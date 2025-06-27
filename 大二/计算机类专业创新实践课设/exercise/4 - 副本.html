@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页计算器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./beijing/1.png');
+      /*background-image-: rgba(0, 0, 0, 0.1);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .calculator {
+      margin: 20px auto;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .display {
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: right;
+      margin-bottom: 10px;
+      resize: none;
+      width: 278.4px;
+    }
+
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+      /*text-align: center;*/
+    }
+
+    .keypad button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #eaeaea/*#4caf50*/;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+    }
+    /*.keypad.button.operator {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f5a623;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }*/
+
+    .keypad button:hover {
+      background-color: #45a049;
+      cursor: pointer;
+    }
+
+    .keypad button:active {
+      background-color: #3e8942;
+    }
+    .but1{
+    	text-align: center;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-left: 75px;
+        padding-right: 75px;
+        display: inline-block;
+    }
+    .button1{
+    	width: 150px;
+    	height: 38.4px;
+    	font-size: 16px;
+    	background-color: #45a049;
+    	border: none;
+      	border-radius: 5px;
+    }
+    .button1:hover{
+    	cursor: pointer;
+    }
+
+	.ribbon {
+    display: flex;
+    justify-content: center;
+    /*position: absolute;*/
+    right: 300px;
+    top: 50px;
+    margin: auto;
+	}
+
+    .ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+	}
+
+	.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+	}
+
+	.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+	}
+
+	.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+	}
+
+  </style>
+</head>
+<body>
+	<div class="ribbon">
+		<a href="./4.html"><span>十进制计算器</span></a>
+  		<a href="./5.html"><span>二进制计算器</span></a>
+  	</div>
+
+  <div class="calculator">
+    <input id="display" class="display" type="text" readonly>
+    
+    <div class="keypad">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('+')">+</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('*')">*</button>      
+      <button style="background-color: #ff69b4;" onclick="appendOperatorToDisplay('!')">!</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button style="background-color: #ff69b4;" onclick="appendToDisplay('.')">.</button>      
+      <button style="background-color: #f5a623;" onclick="appendOperatorToDisplay('/')">/</button>
+      <button style="background-color: #ff69b4;" onclick="appendParenthesis('(')">(</button>
+      <button style="background-color: #ff69b4;" onclick="appendParenthesis(')')">)</button>
+      <button style="background-color: #7b68ee;" onclick="deleteLastChar()">DEL</button>
+      <button style="background-color: #45a049;" onclick="clearDisplay()">C</button>
+      
+    </div>
+    
+       <div class="but1">
+      	<button class="button1" onclick="calculate()" >=</button>
+      
+    </div> 
+  </div>
+  
+
+  <script>
+    function appendToDisplay(value) {
+      var display = document.getElementById("display");
+      display.value += value;
+    }
+
+    function appendOperatorToDisplay(operator) {
+      var display = document.getElementById("display");
+      var lastChar = display.value.slice(-1);
+      if (lastChar !== '+' && lastChar !== '-' && lastChar !== '*' && lastChar !== '/' && lastChar !== '!') {
+        display.value += operator;
+      }
+    }
+
+    function appendParenthesis(parenthesis) {
+      var display = document.getElementById("display");
+      display.value += parenthesis;
+    }
+
+    
+    function calculate() {
+      var display = document.getElementById("display");
+      var expression = display.value;
+
+      // 处理阶乘运算
+      expression = expression.replace(/(\d+)!/g, function(match, num) {
+        var result = 1;
+        for (var i = 1; i <= num; i++) {
+          result *= i;
+        }
+        return result;
+      });
+
+      // 使用eval()函数进行基本计算，仅作演示用
+      try {
+        var result = eval(expression);
+        if (isNaN(result) || !isFinite(result)) {
+          throw "计算结果非法";
+        }
+        display.value = result;
+      } catch (err) {
+        display.value = "错误";
+      }
+    }
+
+    // function calculate() {
+    //   var display = document.getElementById("display");
+    //   var expression = display.value;
+
+    //   // 处理阶乘运算...
+
+    //   // 使用逆波兰表达式（后缀表达式）计算结果
+    //   try {
+    //     var result = evaluateExpression(expression);
+    //     if (isNaN(result) || !isFinite(result)) {
+    //       throw "计算结果非法";
+    //     }
+    //     display.value = result;
+    //   } catch (err) {
+    //     display.value = "错误";
+    //   }
+    // }
+    
+    // function evaluateExpression(expression) {
+    //   // 将表达式拆分为运算符和操作数的数组
+    //   var tokens = expression.split(/([^0-9.])/).filter(function(token) {
+    //     return token.trim().length > 0;
+    //   });
+
+    //   // 创建操作数和运算符的栈
+    //   var operands = [];
+    //   var operators = [];
+      
+    //   // 运算符优先级
+    //   var precedence = {
+    //     "+": 1,
+    //     "-": 1,
+    //     "*": 2,
+    //     "/": 2,
+    //     "!": 3
+    //   };
+
+    //   // 遍历表达式的每个token
+    //   tokens.forEach(function(token) {
+    //     if (isNumeric(token)) {
+    //       // 如果是操作数，直接入栈
+    //       operands.push(parseFloat(token));
+    //     } else {
+    //       // 如果是运算符
+    //       while (operators.length > 0 && precedence[operators[operators.length - 1]] >= precedence[token]) {
+    //         // 当前运算符的优先级小于等于栈顶运算符的优先级时，
+    //         // 弹出栈顶运算符并计算
+    //         var operator = operators.pop();
+    //         var operand2 = operands.pop();
+    //         var operand1 = operands.pop();
+    //         var result = applyOperator(operator, operand1, operand2);
+    //         operands.push(result);
+    //       }
+    //       // 当前运算符入栈
+    //       operators.push(token);
+    //     }
+    //   });
+
+    //   // 执行剩下的计算
+    //   while (operators.length > 0) {
+    //     var operator = operators.pop();
+    //     var operand2 = operands.pop();
+    //     var operand1 = operands.pop();
+    //     var result = applyOperator(operator, operand1, operand2);
+    //     operands.push(result);
+    //   }
+
+    //   // 返回最终结果
+    //   return operands[0];
+    // }
+    
+    // function isNumeric(token) {
+    //   return !isNaN(parseFloat(token)) && isFinite(token);
+    // }
+
+    function applyOperator(operator, operand1, operand2) {
+      switch (operator) {
+        case "+":
+          return operand1 + operand2;
+        case "-":
+          return operand1 - operand2;
+        case "*":
+          return operand1 * operand2;
+        case "/":
+          return operand1 / operand2;
+        case "!":
+          var result = 1;
+          for (var i = 1; i <= operand1; i++) {
+            result *= i;
+          }
+          return result;
+      }
+    }
+
+    function deleteLastChar() {
+      var display = document.getElementById("display");
+      display.value = display.value.slice(0, -1);
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+  </script>
+</body>
+</html>

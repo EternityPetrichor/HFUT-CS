@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/Bit4_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit4_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/Bit8_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit8_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/MULTU_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/ShowEightSeg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowEightSeg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Temp/Course/exper6/multiply/src/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

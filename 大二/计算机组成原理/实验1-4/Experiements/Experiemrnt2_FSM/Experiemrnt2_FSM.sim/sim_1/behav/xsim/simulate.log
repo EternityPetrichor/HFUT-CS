@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+Time=                   0, Reset=1, A=0, State=xxxx, F=x, G=x
+Time=                6000, Reset=0, A=0, State=1000, F=0, G=0
+Time=              123000, Reset=1, A=1, State=1000, F=0, G=0
+Time=              176000, Reset=1, A=1, State=0100, F=0, G=0
+Time=              241000, Reset=1, A=0, State=0100, F=0, G=0
+Time=              294000, Reset=1, A=0, State=0010, F=0, G=0
+Time=              358000, Reset=1, A=1, State=0010, F=0, G=0
+Time=              411000, Reset=1, A=1, State=0001, F=1, G=0
+Time=              475000, Reset=1, A=0, State=0001, F=1, G=0
+Time=              528000, Reset=1, A=0, State=1000, F=0, G=1
+$finish called at time : 710270 ps : File "E:/Experiements/Experiemrnt2_FSM/Experiemrnt2_FSM.srcs/sim_1/new/FSM_tb.v" Line 49

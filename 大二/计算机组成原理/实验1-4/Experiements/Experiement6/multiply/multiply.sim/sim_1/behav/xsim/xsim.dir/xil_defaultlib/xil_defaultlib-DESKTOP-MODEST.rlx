@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/multiply.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/Bit4_to_8421.v,1713511102,verilog,,C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/CLK_DIV.v,,Bit4_to_8421,,,,,,,,
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/CLK_DIV.v,1713512660,verilog,,C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/MULTU_4bit.v,,CLK_DIV,,,,,,,,
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/MULTU_4bit.v,1713502264,verilog,,C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/ShowEightSeg7.v,,MULTU_4bit,,,,,,,,
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/ShowEightSeg7.v,1713509819,verilog,,C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/tb_MULTU_4bit.v,,ShowEightSeg7,,,,,,,,
+C:/Users/wangweidong/OneDrive/Temp/Course/exper6/multiply/src/tb_MULTU_4bit.v,1713512782,verilog,,,,tb_MULTU_4bit,,,,,,,,

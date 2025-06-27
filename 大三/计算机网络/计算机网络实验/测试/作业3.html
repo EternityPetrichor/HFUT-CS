@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>作业3</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.container{
+		width: 1200px;
+		height: 500px;
+		margin: 50px;
+		/*background-color: red;*/
+		font-size: 0;
+	}
+
+	.container .container_1{
+		margin: 30px;
+		width: 500px;
+		height: auto;
+		border: 1px solid black;
+		/*background-color: blue;*/
+		display: inline-block;
+		font-size: 16px;
+		/*text-align: center;*/
+
+	}
+	.container .container_2{
+		margin: 30px;
+		width: 250px;
+		height: auto;
+		/*border: 1px solid black;*/
+		/*background-color: blue;*/
+		display: inline-block;
+		font-size: 16px;
+		/*text-align: center;*/
+	}
+
+	.container>div p{
+		width: 100%;
+		height: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		line-height: 50px;
+
+	}
+	.container>div>table{
+
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+	}
+	/*.container>div>table>tr>td{
+
+		color: blue;
+	}*/
+	/*.container .container_2>table>tr>td>form>input{
+		margin: 3px;
+		padding: 2px;
+	}*/
+</style>
+<body>
+
+	<div class="container">
+		<div class="container_1">
+			<p><b>主表</b></p>
+			<table border="1">
+				<tr>
+					<td style="background-color: #0000FF;"></td>
+					<td style="background-color: #0000FF; text-decoration: underline; color:white">USERID</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">201</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">202</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">203</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">204</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">205</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">206</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">207</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">208</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">209</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Select"></input></td>
+					<td style="color: blue;">210</td>
+				</tr>
+			</table>
+		</div>
+		<div class="container_2">
+			<p><b>明细表</b></p>
+			<table border="1">
+				<tr>
+					<td style="color: blue;">USERID</td>
+					<td style="color: blue;">204</td>
+				</tr>
+				<tr>
+					<td style="color: blue;">USERNAME</td>
+					<td style="color: blue;">s204</td>
+				</tr>
+				<tr>
+					<td style="color: blue;">PASSWORD</td>
+					<td style="color: blue;">204</td>
+				</tr>
+				<tr>
+					<td style="color: blue;">SEX</td>
+					<td style="color: blue;">男</td>
+				</tr>
+				<tr>
+					<td style="color: blue;">BIRTHDAY</td>
+					<td style="color: blue;"></td>
+				</tr>
+				<tr>
+					<td style="color: blue;">REGTIME</td>
+					<td style="color: blue;">2007-3-24 17:34:30</td>
+				</tr>
+				<tr>
+					<td style="color: blue;">SPECIALTY</td>
+					<td style="color: blue;"></td>
+				</tr>
+				<tr>
+					<td style="color: blue;">REMAKE</td>
+					<td style="color: blue;"></td>
+				</tr>
+				<tr><td colspan="2" align="left"><form action="button">
+				<input type="button" value="Edit" style="width:35px; height: 20px; margin: 4px; padding: 2px;">
+				<input type="button" value="Delete" style="width:50px; height: 20px;margin: 4px;padding: 2px;">
+				<input type="button" value="New" style="width:35px; height: 20px;margin: 4px;padding: 2px;"></form></td></tr>
+			</table>
+			<!-- <form action="button">
+				<input type="button" value="Edit" style="width:35px; height: 20px;">
+				<input type="button" value="Delete" style="width:50px; height: 20px;">
+				<input type="button" value="New" style="width:35px; height: 20px;"> -->
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement2_reduce/Experiement2_reduce.srcs/sources_1/new/reducecounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reducecounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement2_reduce/Experiement2_reduce.srcs/sim_1/new/reducecounter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reducecounter_tb

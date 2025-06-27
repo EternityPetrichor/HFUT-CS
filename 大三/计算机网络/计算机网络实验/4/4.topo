@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="26521E5E-D891-4037-AD7C-BA51C070946F" name="AR2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-04-2E-DC" com_port="2001" bootmode="0" cx="411.000000" cy="122.000000" edit_left="438" edit_top="176">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="F1F425CD-A730-4400-BF17-0FF9AA6F03E0" name="AR3" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-81-33-66" com_port="2002" bootmode="0" cx="596.000000" cy="123.000000" edit_left="623" edit_top="177">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="06367EBA-B8AC-463e-94C1-AE234DDD8D2C" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-AD-4D-15" com_port="2000" bootmode="0" cx="224.000000" cy="126.000000" edit_left="251" edit_top="180">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="F653D8ED-6C14-4492-B96B-FFD93B86B3F3" name="Client1" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-C8-03-52 -ipaddr 192.168.10.1 -ipmask 255.255.255.0 -gateway 192.168.10.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-4B-80-AF" com_port="0" bootmode="0" cx="80.000000" cy="260.000000" edit_left="107" edit_top="314">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="B0809507-3EDC-4437-B99F-0DB7EA1C422F" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-9B-20-80 -ipaddr 192.168.40.1 -ipmask 255.255.255.0 -gateway 192.168.40.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-1C-35-37" com_port="0" bootmode="0" cx="758.000000" cy="257.000000" edit_left="785" edit_top="311">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F653D8ED-6C14-4492-B96B-FFD93B86B3F3" destDeviceID="06367EBA-B8AC-463e-94C1-AE234DDD8D2C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="138.613495" srcBoundRect_Y="257.581879" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="219.386505" tarBoundRect_Y="182.418106" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="F1F425CD-A730-4400-BF17-0FF9AA6F03E0" destDeviceID="B0809507-3EDC-4437-B99F-0DB7EA1C422F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="656.275513" srcBoundRect_Y="177.524170" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="751.724487" tarBoundRect_Y="256.475830" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="06367EBA-B8AC-463e-94C1-AE234DDD8D2C" destDeviceID="26521E5E-D891-4037-AD7C-BA51C070946F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="294.173889" srcBoundRect_Y="152.076492" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="394.826111" tarBoundRect_Y="149.923508" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="26521E5E-D891-4037-AD7C-BA51C070946F" destDeviceID="F1F425CD-A730-4400-BF17-0FF9AA6F03E0">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="481.183136" srcBoundRect_Y="149.233429" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="579.816895" tarBoundRect_Y="149.766571" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

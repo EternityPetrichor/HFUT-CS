@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/CustomerMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/FurnitureMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/FurnitureTypeMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/InboundMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/PaymentMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/SaleMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/furniture/mapper/SupplierMapper.java" dialect="MySQL" />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/addsub_4bitmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_4bitmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/and_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux41_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/mux41_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux41_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sources_1/new/or_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement_5.3/Experiement_5.3.srcs/sim_1/new/addsub_4bitmux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub_4bitmux_tb

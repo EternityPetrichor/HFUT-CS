@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Apr  9 20:09:34 2024
+| Host         : StevenKlaus running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file adder_1bit_bus_skew_routed.rpt -pb adder_1bit_bus_skew_routed.pb -rpx adder_1bit_bus_skew_routed.rpx
+| Design       : adder_1bit
+| Device       : 7a35t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

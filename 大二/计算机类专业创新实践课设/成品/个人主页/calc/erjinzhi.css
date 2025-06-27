@@ -1,0 +1,93 @@
+    * {
+        margin: 0;
+        padding: 0
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      background-image: url('./beijing/5.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 0;
+    }
+    input[type="text"], input[type="button"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="button"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="button"]:hover {
+      background-color: #45a049;
+    }
+    #result {
+      font-weight: bold;
+      padding: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      width: 95%;
+    }
+    .ribbon {
+    display: flex;
+    justify-content: center;
+    /*position: absolute;*/
+    right: 300px;
+    top: 50px;
+    margin: auto;
+  }
+
+    .ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    transition: background-color 0.2s, margin-top 0.2s;
+  }
+
+  .ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+  }
+
+  .ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+  }
+
+  .ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+  }

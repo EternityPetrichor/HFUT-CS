@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nocode">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/nocode.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

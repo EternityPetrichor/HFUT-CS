@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiment_2addcount/Experiment_2addcount.srcs/sources_1/new/addcount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addcount
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiment_2addcount/Experiment_2addcount.srcs/sim_1/new/addcount_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addcount_tb

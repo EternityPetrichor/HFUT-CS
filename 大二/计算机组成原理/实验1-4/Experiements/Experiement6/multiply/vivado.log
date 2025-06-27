@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr 22 14:41:31 2024
+# Process ID: 16892
+# Current directory: E:/Experiements/Experiement6/multiply
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42204 E:\Experiements\Experiement6\multiply\multiply.xpr
+# Log file: E:/Experiements/Experiement6/multiply/vivado.log
+# Journal file: E:/Experiements/Experiement6/multiply\vivado.jou
+# Running On: StevenKlaus, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16890 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Experiements/Experiement6/multiply/multiply.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/OneDrive/Temp/Course/exper6/multiply' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Experiements/Experiement6/multiply/multiply.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:35 . Memory (MB): peak = 1610.422 ; gain = 367.945
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/Bit4_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit4_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/Bit8_to_8421.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit8_to_8421
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/MULTU_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/ShowEightSeg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowEightSeg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/src/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1617.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MULTU_4bit
+Compiling module xil_defaultlib.Bit4_to_8421
+Compiling module xil_defaultlib.Bit8_to_8421
+Compiling module xil_defaultlib.ShowEightSeg7
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1617.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 1617.949 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/Experiements/Experiement6/multiply/multiply.srcs/utils_1/imports/synth_1/ShowTwoSeg7.dcp with file E:/Experiements/Experiement6/multiply/multiply.runs/synth_1/top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Experiements/Experiement6/multiply/multiply.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Apr 22 15:26:30 2024] Launched synth_1...
+Run output will be captured here: E:/Experiements/Experiement6/multiply/multiply.runs/synth_1/runme.log
+[Mon Apr 22 15:26:30 2024] Launched impl_1...
+Run output will be captured here: E:/Experiements/Experiement6/multiply/multiply.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Apr 22 15:30:18 2024] Launched impl_1...
+Run output will be captured here: E:/Experiements/Experiement6/multiply/multiply.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files E:/Experiements/Experiement6/multiply/src/top.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/Experiements/Experiement6/multiply/src/top.xdc
+file mkdir E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1
+file mkdir E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new
+close [ open E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new/top.xdc w ]
+add_files -fileset constrs_1 E:/Experiements/Experiement6/multiply/multiply.srcs/constrs_1/new/top.xdc
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/Experiements/Experiement6/multiply/multiply.srcs/utils_1/imports/synth_1/ShowTwoSeg7.dcp with file E:/Experiements/Experiement6/multiply/multiply.runs/synth_1/top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Experiements/Experiement6/multiply/multiply.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Apr 22 15:32:13 2024] Launched synth_1...
+Run output will be captured here: E:/Experiements/Experiement6/multiply/multiply.runs/synth_1/runme.log
+[Mon Apr 22 15:32:13 2024] Launched impl_1...
+Run output will be captured here: E:/Experiements/Experiement6/multiply/multiply.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim/simulate.log"
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/Experiements/Experiement6/multiply/multiply.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 15:40:19 2024...
